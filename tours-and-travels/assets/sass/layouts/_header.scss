@@ -1,0 +1,379 @@
+// @use '../abstracts/variables' as *;
+// @use '../abstracts/mixins' as *;
+
+.alim-site-header { 
+    border-top: .7rem solid $brand-color1;
+
+    &__container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    &__logo {
+        width: 10rem;
+    }
+}
+
+.request-quote-and-badge-wrapper {
+    display: flex;
+    position: absolute;
+    top: 4rem;
+    background: #f9f9f9;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    margin: auto;
+    height: 3rem;
+    column-gap: 0.75rem;
+
+    @media only screen and (min-width:576px) {
+        column-gap: 3rem;
+    }
+
+    @media only screen and (min-width:1200px) {
+        position: relative;
+        top: 0;
+        width: auto;
+        background: none;
+    }
+}
+
+
+
+@media only screen and (min-width:1200px) {
+    .alim-site-header {
+        border-top-width: 1rem;
+
+        &__container {
+            display: flex;
+            column-gap: 2rem;
+            margin-left: 7rem;
+            padding-left: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 6rem;
+        }
+
+        &__logo {
+            width: 12rem;
+            display: flex; 
+            align-items: center;
+            // border: 1px solid red;
+        }
+    }
+}
+
+
+.parent-company-badge {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+
+    &__logo {
+        width: 2rem;
+    }
+
+    &__label {
+        line-height: 1;
+        font-weight: 600;
+        font-size: 0.75rem;
+        letter-spacing: -.001rem;
+        color: $brand-color2-dark-variation1;
+        white-space: nowrap;
+        display: flex;
+        column-gap: 0.25rem;
+
+        @include xl() {
+            flex-direction: column;
+        }
+    }
+
+    &__label-line1 {}
+
+    &__label-line2 {
+
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .parent-company-badge {
+        margin-left: auto;
+        text-align: center;
+        flex-direction: row;
+        text-align: left;
+        zoom: 0.8;
+    }
+}
+
+
+
+.social-media {
+    position: absolute;
+    top: 8rem;
+
+    @media only screen and (min-width:1200px) {
+        top: 6.05rem;
+        left: 3.55rem;
+    }
+
+    &__link {
+        width: 2.15rem;
+        height: 2.15rem;
+        display: flex;
+        background: white;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #cdcdcd;
+        margin: -1px;
+
+        &:hover {
+            background: $brand-color2;
+
+            .social-media__link-img-white {
+                display: block;
+                width: 1.15rem;
+                height: 1.15rem;
+            }
+
+            .social-media__link-img {
+                display: none;
+                width: 1.15rem;
+                height: 1.15rem;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+
+    &__link-img {
+        width: 1.15rem;
+        height: 1.15rem;
+
+        &:hover {
+            fill: white;
+        }
+    }
+
+    &__link-img-white {
+        display: none;
+    }
+
+    &__label {
+        display: none;
+
+        @media only screen and (min-width:1200px) {
+            display: flex;
+            transform: rotate(-90deg);
+            margin-left: -1.1rem;
+            margin-top: 3rem;
+        }
+    }
+}
+
+
+
+.alim-header-static-box {
+    display: grid;
+    position: absolute;
+    top: 25rem;
+    width: 100%;
+
+    @media only screen and (min-width:768px) {
+        grid-template-columns: 17rem 1fr;
+    }
+
+    @media only screen and (min-width:992px) {
+        margin-left: 6rem;
+        top: 29rem;
+    }
+
+    @media only screen and (min-width:1200px) {
+        grid-template-columns: 20rem 1fr;
+        top: 33rem;
+    }
+
+    &__col1 {
+        background: $brand-color1;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        color: white;
+
+        @media only screen and (min-width:768px) {
+            height: 100%;
+        }
+
+        @media only screen and (min-width:1200px) {
+            justify-content: center;
+        }
+    }
+
+    &__col1-box {
+        display: flex;
+        column-gap: 0.5rem;
+        width: 15rem;
+    }
+
+    &__col1-box-icon {
+        width: 2.5rem;
+    }
+
+    &__col1-box-text {
+        font-size: .9rem;
+        line-height: 1.35;
+    }
+
+    &__col2 {
+        background: $brand-color2;
+        color: white;
+        padding-left: 2rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+
+        @media only screen and (min-width:576px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 4rem;
+        }
+
+        @media only screen and (min-width:1200px) {
+            padding-left: 6rem;
+            column-gap: 10rem;
+        }
+    }
+
+    &__col2-emails-label {
+        display: flex;
+        column-gap: 0.5rem;
+        font-size: .8rem;
+        margin-bottom: .35rem;
+    }
+
+    &__col2-emails-label-icon {
+        width: 0.9rem;
+    }
+
+    &__col2-emails-container {
+        line-height: 1.35;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__col2-emails-links {
+        color: white;
+        font-size: 1.10rem;
+    }
+
+    &__col2-telno-link {
+        color: white;
+        font-size: 1.50rem;
+
+        @media only screen and (min-width:1200px) {
+            font-size: 1.65rem;
+        }
+    }
+
+    &__col2-telno {
+        line-height: 1.35;
+    }
+
+    &__col2-telno-label {
+        display: flex;
+        font-size: .8rem;
+        align-items: center;
+        column-gap: 0.35rem;
+    }
+}
+
+
+
+.subpage-banner {
+    margin-top: 3.05rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 10rem;
+
+    @include xl() {
+        margin-top: 0;
+        height: 23rem;
+        margin-left: 7rem;
+    }
+
+    &::after {
+        content: " ";
+        background: #000;
+        opacity: 0.35;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    &__heading {
+        position: absolute;
+        z-index: 10;
+        color: white;
+        margin-left: 5rem;
+        line-height: 1;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+        @include xl() {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        &:after {
+            content: " ";
+            height: 0.25rem;
+            background: #0797ce;
+            width: 100%;
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        @include xl() {
+            margin-left: 6rem;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: -1;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+
+.subpage {
+    .alim-header-static-box {
+        top: 15rem;
+
+        @include xl() {
+            top: 23rem;
+        }
+    }
+}

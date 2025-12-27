@@ -1,0 +1,10 @@
+/node_modules
+/logistics/sessions
+/logistics/admin/uploads
+/logistics/blog/wp-content/uploads
+/logistics/admin/uploads
+.htaccess
+/logistics/.htaccess
+/logistics/blog/.htaccess
+/logistics/blog/wp-content/plugins
+/logistics/sitemap.xml

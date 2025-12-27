@@ -1,0 +1,94 @@
+[16-Oct-2023 13:00:37 UTC] PHP Warning:  require_once(includes/database.php): failed to open stream: No such file or directory in /home4/aegis/public_html/logistics/templates/header.php on line 2
+[16-Oct-2023 13:00:37 UTC] PHP Fatal error:  require_once(): Failed opening required 'includes/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/aegis/public_html/logistics/templates/header.php on line 2
+[16-Oct-2023 13:23:15 UTC] PHP Warning:  require_once(includes/database.php): failed to open stream: No such file or directory in /home4/aegis/public_html/logistics/templates/header.php on line 2
+[16-Oct-2023 13:23:15 UTC] PHP Fatal error:  require_once(): Failed opening required 'includes/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/aegis/public_html/logistics/templates/header.php on line 2
+[19-Feb-2024 10:24:58 UTC] PHP Warning:  require_once(../includes/database.php): failed to open stream: No such file or directory in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[19-Feb-2024 10:24:58 UTC] PHP Fatal error:  require_once(): Failed opening required '../includes/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[19-Feb-2024 11:34:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 11:35:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 11:35:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 11:40:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 11:40:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 11:40:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 11:40:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 11:40:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 11:40:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 11:44:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'aegis_logistics_international_movers.services' doesn't exist in /home4/aegis/public_html/logistics/includes/database.php:35
+Stack trace:
+#0 /home4/aegis/public_html/logistics/includes/database.php(35): mysqli->query('select * from s...')
+#1 /home4/aegis/public_html/logistics/templates/header.php(119): Database->query('select * from s...')
+#2 /home4/aegis/public_html/logistics/index.php(2): include('/home4/aegis/pu...')
+#3 {main}
+  thrown in /home4/aegis/public_html/logistics/includes/database.php on line 35
+[19-Feb-2024 15:09:10 UTC] PHP Warning:  require_once(../includes/database.php): failed to open stream: No such file or directory in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[19-Feb-2024 15:09:10 UTC] PHP Fatal error:  require_once(): Failed opening required '../includes/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[26-Feb-2024 12:06:01 UTC] PHP Warning:  require_once(../includes/database.php): failed to open stream: No such file or directory in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[26-Feb-2024 12:06:01 UTC] PHP Fatal error:  require_once(): Failed opening required '../includes/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[26-Feb-2024 12:06:05 UTC] PHP Warning:  require_once(../includes/database.php): failed to open stream: No such file or directory in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[26-Feb-2024 12:06:05 UTC] PHP Fatal error:  require_once(): Failed opening required '../includes/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[26-Feb-2024 12:06:09 UTC] PHP Warning:  require_once(../includes/database.php): failed to open stream: No such file or directory in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[26-Feb-2024 12:06:09 UTC] PHP Fatal error:  require_once(): Failed opening required '../includes/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[26-Feb-2024 12:06:11 UTC] PHP Warning:  require_once(../includes/database.php): failed to open stream: No such file or directory in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[26-Feb-2024 12:06:11 UTC] PHP Fatal error:  require_once(): Failed opening required '../includes/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/aegis/public_html/logistics/templates/landing-page-header.php on line 2
+[06-Sep-2025 07:57:17 UTC] PHP Warning:  Undefined variable $db in /home4/aegis/public_html/logistics/index.php on line 75
+[06-Sep-2025 07:57:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home4/aegis/public_html/logistics/index.php:75
+Stack trace:
+#0 {main}
+  thrown in /home4/aegis/public_html/logistics/index.php on line 75
+[24-Oct-2025 20:13:53 UTC] PHP Warning:  mysqli::__construct(): (08004/1040): Too many connections in /home4/aegis/public_html/logistics/includes/database.php on line 38
+[24-Oct-2025 21:19:25 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home4/aegis/public_html/logistics/includes/database.php on line 38
+[31-Oct-2025 02:37:22 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home4/aegis/public_html/logistics/includes/database.php on line 38

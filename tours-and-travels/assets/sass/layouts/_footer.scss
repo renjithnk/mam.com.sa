@@ -1,0 +1,251 @@
+// @use '../abstracts/variables' as *;
+// @use '../abstracts/mixins' as *;
+
+.aegis-site-footer {
+    @include xl() {
+        margin-left: 8rem;
+    }
+
+    &__container {
+        padding-right: 0;
+    }
+
+    &__logo {
+        width: 10rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+
+        @include sm() {
+            margin-right: auto;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+
+        @include lg() {
+            width: 14rem;
+        }
+    }
+
+    &__row1 {
+        margin-bottom: 1rem;
+
+        @include sm() {
+            display: flex;
+
+        }
+
+        @include xl() {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__row2 {
+        background: #f5f5f5;
+        padding: 2rem;
+
+
+
+        @include sm() {
+            padding: 4rem 3rem;
+        }
+
+        @include xl() {
+            padding-left: 5rem;
+            padding-top: 5rem;
+        }
+    }
+
+    &__row3 {
+        padding-bottom: 1rem;
+
+        @include xl() {
+            padding-bottom: 2rem;
+        }
+
+        .aegis-site-footer-navbox {
+            padding: 3rem;
+            background: $brand-color1;
+            margin-bottom: 1rem;
+
+            @include lg() {
+                padding: 5rem 6rem;
+            }
+
+            &-ul {
+                @include sm() {
+                    column-count: 2;
+                }
+
+                @include lg() {
+                    column-count: 3;
+                }
+            }
+
+            &-li {
+                line-height: 1.75;
+            }
+
+            &-links {
+                color: white;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .aegis-site-footer-social-media {
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+        justify-content: center;
+
+        @include xl() {
+            margin-right: 6rem;
+        }
+
+        &__box {
+            display: flex;
+        }
+
+        &__link {
+            display: flex;
+            width: 2.15rem;
+            height: 2.15rem;
+            display: flex;
+            background: white;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #cdcdcd;
+            margin: -1px;
+
+            &-img-white {
+                display: block;
+                width: 1.15rem;
+                height: 1.15rem;
+            }
+
+            &:hover {
+                background: #0797ce;
+
+                .aegis-site-footer-social-media__link-img {
+                    display: none;
+                }
+
+                .aegis-site-footer-social-media__link-img-white {
+                    display: block;
+                    width: 1.15rem;
+                    height: 1.15rem;
+                }
+            }
+
+            @include lg() {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+
+            &-img {
+                width: 1.15rem;
+                height: 1.15rem;
+            }
+
+            &-img-white {
+                display: none;
+            }
+        }
+    }
+
+    &__contact-box {
+        @include sm() {
+            display: grid;
+            grid-row-gap: 1rem;
+            grid-column-gap: 2rem;
+        }
+
+        @include md() {
+            grid-column-gap: 6rem;
+            grid-row-gap: 2rem;
+        }
+
+        @include lg() {
+            grid-template-columns: 19rem 1fr 1fr;
+        }
+
+        &-links {
+            font-size: 1rem;
+        }
+    }
+
+    &__contact-box-items {
+        margin-bottom: 1.5rem;
+    }
+
+    &__contact-box-icon {
+        display: flex;
+        max-height: 1.3rem;
+        width: 1.3rem;
+    }
+
+    &__contact-box-p {
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
+
+    &__contact-box-heading {
+        font-size: .9rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        column-gap: .75rem;
+
+        @include lg() {
+            font-size: 1.15rem;
+        }
+    }
+
+    .copyright {
+        background: white;
+        line-height: 1.25;
+    }
+}
+
+
+.move-to-top {
+    display: none;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.5rem;
+    z-index: 99;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: $brand-color2;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+}
+
+.move-to-top::before {
+    content: "";
+    width: 0.35rem;
+    height: 0.35rem;
+    padding: 2px;
+    background-color: transparent;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(-136deg);
+    -webkit-transform: rotate(-136deg);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0.5rem;
+    bottom: 0;
+}
+
+.move-to-top:hover {
+    background-color: $brand-color2;
+}

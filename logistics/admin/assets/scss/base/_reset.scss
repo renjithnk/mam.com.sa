@@ -1,0 +1,55 @@
+*,
+*:hover,
+*:focus {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: .9rem;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    // overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // height: 100%;
+}
+
+body,
+ul,
+p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: .9rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: optimizespeed;
+}

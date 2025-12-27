@@ -1,0 +1,1167 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.alim-airlines-parners {
+    margin-top: 15rem;
+    overflow-x: hidden;
+
+    @include md-min {
+        margin-top: 8rem;
+    }
+
+    @include lg-min {
+        margin-top: 4rem;
+    }
+
+    @include xl-min {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    &__heading {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        display: none;
+    }
+
+    &__slide {
+        text-align: center;
+    }
+
+    &__pagination {
+        text-align: center;
+
+        @include lg-min {
+            margin-top: 2rem;
+        }
+    }
+
+    &__logo {
+        width: auto;
+        height: 3rem;
+        max-width: 10rem;
+    }
+}
+
+
+
+
+
+
+
+.aegis-provision {
+
+    // margin-top: 15rem;
+    @include xl-min {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    &__container {
+        @include md-min {
+            display: grid;
+            grid-template-columns: 17rem 1fr 15rem;
+        }
+
+        @include lg-min {
+            grid-template-columns: 0.85fr 1fr 18rem;
+        }
+
+        @include xl-min {
+            grid-template-columns: 22rem 1fr 19rem;
+            padding-right: 0;
+        }
+    }
+
+    &__col1 {
+        border: 1px solid #cdcdcd;
+        padding: 1.5rem;
+
+        @include md-min {
+            display: flex;
+            align-items: center;
+        }
+
+        @include lg-min {
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        &-listbox {
+            display: grid;
+            grid-gap: 1.5rem;
+
+            @include lg-min {
+                grid-gap: 2.75rem;
+            }
+        }
+
+        &-listbox-li {
+            display: flex;
+            column-gap: 0.7rem;
+
+            @include lg-min {
+                font-size: 1.10rem;
+            }
+        }
+
+        &-listbox-icon {
+            width: 2rem;
+        }
+    }
+
+    &__col2 {
+        background: #f1f1f1;
+        padding: 1.5rem;
+        border: 1px solid #cdcdcd;
+
+
+        @include md-min {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-right: 1rem;
+            border-left: 0;
+        }
+
+        @include lg-min {
+            padding: 3rem 5rem;
+            margin-top: 3rem;
+        }
+    }
+
+    &__col3 {
+        display: flex;
+    }
+
+    &__col3-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-height: 20rem;
+
+        @include md-min {
+            // max-height: 26rem;
+            height: 100%;
+            max-height: inherit;
+        }
+
+    }
+
+}
+
+
+// Aegis Quick: Start
+
+.aegis-quick {
+    @include xl-min {
+        margin-right: 8rem;
+    }
+
+    &__container {
+        @include xl-min {
+            padding-right: 0;
+        }
+    }
+
+    &__heading {
+        @include xl-min {
+            margin-left: 8rem;
+        }
+    }
+
+    &__description {
+        @include xl-min {
+            margin-left: 8rem;
+        }
+    }
+
+    &__box {
+        z-index: 1;
+        position: relative;
+
+        @include md-min {
+            display: grid;
+            grid-template-columns: 1fr 20rem;
+        }
+
+        @include xl-min {
+            margin-left: -1rem;
+            margin-right: 8rem;
+            grid-template-columns: 1fr 25rem;
+
+        }
+
+        &-col1 {
+            background: $brand-color1;
+            padding: 2rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            &-caption-heading {
+                margin-bottom: 0;
+
+                @include xl-min {
+                    font-size: 2rem;
+                    max-width: 35rem;
+                    margin-left: 5rem;
+                }
+            }
+        }
+
+        &-col2 {
+            background: #f3f3f3;
+            padding: 2rem;
+
+            @include xl-min {
+                padding: 3rem;
+            }
+        }
+    }
+
+    &__img-container {
+        margin-top: 2rem;
+        position: relative;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            background: #000;
+            opacity: 0.2;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @include xl-min {
+            margin-left: -1rem;
+            margin-bottom: -5rem;
+        }
+    }
+
+    &__img {
+        display: flex;
+        object-fit: cover;
+        width: 100%;
+
+        @include xl-min {
+            height: 30rem;
+        }
+    }
+}
+
+
+.aegis-services-brief {
+
+    &__container {
+        @include xl-min {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    @include xl-min {
+        margin-right: 8rem;
+        margin-left: 8rem;
+    }
+
+    &__wrapper {
+        border: 1px solid #cdcdcd;
+
+        @include md-min {
+            display: grid;
+            grid-template-columns: 17rem 1fr;
+        }
+
+        @include lg-min {
+            grid-template-columns: 25rem 1fr;
+
+        }
+    }
+
+    &__col1 {
+        background: #f5f5f5;
+        padding: 2rem;
+
+        @include md-min {
+            display: flex;
+            align-items: center;
+        }
+
+        @include lg-min {
+            padding: 4rem;
+        }
+    }
+
+    &__listbox {
+        display: grid;
+        grid-gap: 2rem;
+
+        @include md-min {
+            grid-gap: 3rem;
+        }
+
+        @include lg-min {
+            grid-gap: 4rem;
+        }
+
+    }
+
+    &__listbox-li {
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+        line-height: 1.20;
+    }
+
+    &__col2 {
+        padding: 2rem;
+
+        @include lg-min {
+            padding: 4rem 5rem;
+        }
+
+        &-bullet-box {
+            margin-bottom: 1rem;
+        }
+
+        &-bullet-box-ul {
+            @include sm-min {
+                column-count: 2;
+            }
+        }
+
+        &-bullet-box-li {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            column-gap: 0.5rem;
+            line-height: 1.5;
+
+            &::before {
+                content: " ";
+                background-image: url(../../assets/images/bullet-arrow.svg);
+                background-size: 1rem;
+                display: flex;
+                width: 1rem;
+                height: 0.7rem;
+                background-repeat: no-repeat;
+                position: relative;
+                top: .40rem;
+            }
+        }
+    }
+}
+
+
+
+
+// Aegis Trucks: Start
+
+.aegis-trucks {
+    @include xl-min {
+        margin-left: 8rem;
+    }
+
+    &__container {
+        @include xl-min {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    &__img {
+        position: relative;
+        height: 100%;
+
+    }
+
+    &__img-container {
+        position: relative;
+        height: 13rem;
+
+        @include md-min {
+            height: 26rem;
+        }
+
+        @include lg-min {
+            // height: 23rem;
+        }
+
+        @include xl-min {
+            margin-bottom: -5rem;
+
+        }
+
+        &::after {
+            content: " ";
+            position: absolute;
+            background: #000;
+            opacity: .30;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__caption-box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+
+        @include sm-min {
+            justify-content: center;
+            left: 0;
+            right: 0;
+        }
+
+        @include xl-min {
+            left: auto;
+            right: 14rem;
+            top: -5rem;
+            width: 24rem;
+        }
+
+        &-heading {
+            line-height: 1;
+            position: relative;
+            color: white;
+            margin-bottom: 0;
+
+            &:after {
+                content: " ";
+                height: 0.25rem;
+                background: #0797ce;
+                width: 90%;
+                display: flex;
+                margin-top: 1rem;
+            }
+
+            @include xl-min {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    &__heading {}
+
+    &__description {}
+
+    &__box {
+        position: relative;
+
+        @include md-min {
+            display: grid;
+            grid-template-columns: 1fr 20rem;
+        }
+
+        @include xl-min {
+            margin-right: 8rem;
+            grid-template-columns: 1fr 25rem;
+
+        }
+
+        &-col1 {
+            background: #f3f3f3;
+            padding: 2rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            @include xl-min {
+                padding: 3rem;
+            }
+
+            &-caption-heading {
+                margin-bottom: 0;
+
+                @include xl-min {
+                    font-size: 2rem;
+                    max-width: 35rem;
+                    margin-left: 5rem;
+                }
+            }
+        }
+
+        &-col2 {
+            background: $brand-color2;
+            padding: 2rem;
+
+            @include xl-min {
+                padding: 3rem;
+            }
+        }
+
+        &-col2-caption {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            row-gap: 1rem;
+
+            &-img {
+                width: 2.5rem;
+            }
+        }
+
+        &-col2-caption-text {
+            color: white;
+        }
+    }
+
+
+    &__img-container {
+        @include xl-min {
+            height: 30rem;
+        }
+    }
+
+    &__img {
+        display: flex;
+        object-fit: cover;
+        width: 100%;
+
+        @include xl-min {
+            height: 30rem;
+        }
+    }
+}
+
+
+
+
+.aegis-mission {
+    @include xl-min {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    &__container {
+        @include xl-min {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__listbox {
+        display: grid;
+        grid-gap: 1rem;
+
+        @include md-min {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &-items {
+            background: #f3f3f3;
+        }
+
+        &-description-box {
+            padding: 1.5rem;
+        }
+
+        &-heading {
+            font-size: 1rem;
+        }
+
+        &-img {
+            object-fit: cover;
+            width: 100%;
+            height: 10rem;
+        }
+    }
+}
+
+
+
+
+
+
+.aegis-pack {
+    @include xl-min {
+        margin-right: 8rem;
+    }
+
+    &__container {
+        @include xl-min {
+            padding-right: 0;
+        }
+    }
+
+    &__heading {
+        @include xl-min {
+            margin-left: 8rem;
+        }
+    }
+
+    &__description {
+        @include xl-min {
+            margin-left: 8rem;
+        }
+    }
+
+    &__box {
+        @include md-min {
+            display: grid;
+            grid-template-columns: 1fr 20rem;
+        }
+
+        @include xl-min {
+            margin-left: -1rem;
+            margin-right: 6rem;
+            grid-template-columns: 1fr 25rem;
+
+        }
+
+        &-col1 {
+            background: $brand-color1;
+            padding: 2rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            &-caption-heading {
+                margin-bottom: 0;
+
+                @include xl-min {
+                    font-size: 2rem;
+                    max-width: 35rem;
+                    margin-left: 5rem;
+                }
+            }
+        }
+
+        &-col2 {
+            background: #f3f3f3;
+            padding: 2rem;
+
+            @include xl-min {
+                padding: 3rem;
+            }
+        }
+    }
+
+    &__img-container {
+        margin-top: 2rem;
+
+        @include xl-min {
+            margin-left: -1rem;
+            margin-bottom: -5rem;
+        }
+    }
+
+    &__img {
+        display: flex;
+        object-fit: cover;
+        width: 100%;
+
+        @include xl-min {
+            height: 30rem;
+        }
+    }
+}
+
+
+
+.aegis-solution {
+    @include xl-min {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    &__heading {
+        @include sm-min {
+            text-align: center;
+        }
+    }
+
+    &__listbox {
+        background: #f1f1f1;
+        padding: 2rem;
+        display: grid;
+        grid-gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        @include sm-min {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include md-min {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include xl-min {
+            height: 10rem;
+        }
+
+        &-items {
+            display: flex;
+            column-gap: 1rem;
+            align-items: center;
+            line-height: 1;
+            justify-content: center;
+
+            &-icon {
+                width: 2rem;
+                max-height: 2.5rem;
+            }
+        }
+
+    }
+
+    &__description {
+        text-align: center;
+    }
+}
+
+
+
+.aegis-containers {
+    padding-top: 0;
+
+    @include xl-min {
+        margin-left: 8rem;
+        padding-right: 0;
+    }
+
+    &__container {
+        padding-right: 0;
+    }
+
+    &__box {
+
+        @include md-min {
+            width: 20rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        @include xl-min {
+            top: 7rem;
+        }
+    }
+
+    &__img-container {
+        position: relative;
+        height: 13rem;
+
+        @include md-min {
+            height: 24.60rem;
+        }
+
+        @include xl-min {
+            height: 30rem;
+        }
+
+        &:after {
+            content: " ";
+            position: absolute;
+            background: #000;
+            opacity: 0.3;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__img {
+        display: flex;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__caption-box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+
+        @include md-min {
+            width: 15rem;
+            margin-left: 2rem;
+        }
+
+        @include xl-min {
+            width: 21rem;
+            margin-left: 5rem;
+        }
+    }
+
+    &__caption-text {
+        line-height: 1;
+        position: relative;
+        color: white;
+        margin-bottom: 0;
+
+        @include xl-min {
+            font-size: 2rem;
+        }
+
+        &:after {
+            content: " ";
+            height: 0.25rem;
+            background: #0797ce;
+            width: 90%;
+            display: flex;
+            margin-top: 1rem;
+        }
+    }
+
+    &__box-col1 {
+        background: $brand-color2;
+        padding: 1.5rem 2rem;
+        text-align: center;
+
+        &-content-box-img {
+            margin-bottom: .5rem;
+        }
+
+        &-content-box-text {
+            color: white;
+        }
+    }
+
+    &__box-col2 {
+        background: #f5f5f5;
+        padding: 2.5rem 2rem;
+
+        @include xl-min {
+            padding: 3rem;
+        }
+    }
+}
+
+/* Testimonials: Start */
+.aegis-testimonials {
+    overflow-x: hidden;
+
+    &__swiper2 {
+        // margin-right: 1px;
+        overflow-x: hidden;
+    }
+
+    &__wrapper {
+        align-items: stretch;
+        margin-right: 1px;
+    }
+
+    &__container {
+        // padding-left: 0;
+        // padding-right: 0;
+    }
+
+    &__container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &__quote {
+        width: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__name {
+        margin-bottom: 0;
+    }
+
+    @include md-min {
+        margin-top: 8rem;
+    }
+
+    @include lg-min {
+        margin-top: 4rem;
+    }
+
+    @include xl-min {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include md-min {
+            font-size: 1.75rem;
+        }
+
+        @include xl-min {
+            font-size: 2rem;
+        }
+    }
+
+    &__slide {
+        text-align: center;
+        padding: 1rem;
+        border: 1px solid #cdcdcd;
+        height: auto;
+        border-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            span {
+                background: transparent !important;
+            }
+        }
+
+        @include lg-min {
+            padding: 1.75rem;
+            background: #f5f5f5;
+            border: .5rem solid white;
+        }
+    }
+
+    &__pagination {
+        text-align: center;
+
+        @include lg-min {
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__logo {
+        width: auto;
+        height: 3rem;
+        max-width: 10rem;
+    }
+}
+
+/* Testimonials: End */
+
+
+
+.aegis-question {
+    padding-top: 0;
+
+    @include xl-min {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    &__heading {
+        margin-bottom: .5rem;
+    }
+
+    &__heading,
+    &__p {
+        text-align: center;
+    }
+
+    &__subheading {
+        text-align: center;
+    }
+
+    &__telnumber {
+        display: inline-flex;
+        background: $brand-color2;
+        padding: 1rem 1.5rem;
+        color: white;
+        justify-content: center;
+        column-gap: 0.5rem;
+        margin-bottom: 1rem;
+        margin-bottom: 0;
+
+        @include lg-min {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        &-wrapper {
+            text-align: center;
+        }
+
+        &-icon {
+            width: 1.5rem;
+            margin-top: 0.25rem;
+        }
+
+        &-digit {
+            font-size: 1.70rem;
+
+            @include lg-min {
+                font-size: 2.15rem;
+            }
+        }
+
+    }
+
+    &__or {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.10rem;
+        margin-bottom: 0;
+    }
+
+    .aegis-question-form {
+        background: #f5f5f5;
+        padding: 2rem;
+
+        @include md-min {
+            padding: 3rem;
+        }
+
+        @include lg-min {
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+.aegis-member {
+    @include lg-min {
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 3rem;
+    }
+
+    &__container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @include md-min {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include lg-min {
+            grid-template-columns: 30rem 1fr;
+            height: 15rem;
+        }
+    }
+
+    &__col1 {
+        display: flex;
+        color: white;
+
+        &-img {
+            object-fit: cover;
+            width: 100%;
+            height: 10rem;
+
+            @include md-min {
+                height: auto;
+            }
+        }
+    }
+
+    &__col2 {
+        background: $brand-color2;
+        padding: 2rem;
+
+        @include md-min {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include xl-min {
+            justify-content: flex-end;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+
+    .aegis-member-box {
+        display: grid;
+        grid-gap: 1rem;
+
+        &__col1 {
+            background: white;
+        }
+
+        &__row2 {
+            display: grid;
+            grid-gap: 1rem;
+
+            @include lg-min {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @include lg-min {
+            display: grid;
+            column-gap: 0.5rem;
+        }
+
+        &__col1 {
+            padding: 1rem;
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        &__col2 {
+            background: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 3rem;
+            padding-right: 1rem;
+
+
+        }
+
+        &__col3 {
+            background-color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__logo {
+            // height: auto;
+            // width: auto;
+        }
+
+        &__heading {
+            font-size: .8rem;
+            margin-bottom: .5rem;
+            color: white;
+        }
+
+        &__p {
+            color: white;
+            font-size: .8rem;
+            margin-bottom: 0;
+        }
+    }
+}

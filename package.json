@@ -1,0 +1,33 @@
+{
+  "name": "core-php-cms-website",
+  "version": "1.0.0",
+  "description": "core-php-cms-website",
+  "main": "index.js",
+"scripts": {
+    "bs": "browser-sync start --proxy \"localhost.mam.com.sa\" --files \"**/*.php, **/*.css, **/*.js\" --no-notify",
+    "sass": "sass --watch assets/sass:assets/css logistics/assets/sass:logistics/assets/css tours-and-travels/assets/sass:tours-and-travels/assets/css main-index/assets/sass:main-index/assets/css",
+    "dev": "concurrently \"npm run sass\" \"npm run bs\" --kill-others-on-fail"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renjithnk/core-php-cms-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renjithnk/core-php-cms-website/issues"
+  },
+  "homepage": "https://github.com/renjithnk/core-php-cms-website#readme",
+  "dependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1",
+    "sass": "^1.65.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-cssmin": "^5.0.0",
+    "grunt-contrib-uglify": "^5.2.2"
+  }
+}

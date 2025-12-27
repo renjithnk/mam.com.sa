@@ -1,0 +1,43 @@
+.accordion {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+
+    >ul>li {
+        border-bottom: 1px solid #efefef;
+    }
+}
+
+.accordion ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+
+
+.accordion ul li {
+    padding: .5rem;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.accordion ul li .accordion-trigger {
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.accordion ul li .accordion-content {
+    padding: 1rem;
+    background: #f5f5f5;
+    /* border: 1px solid #f0f0f0; */
+    display: none;
+    margin-top: .5rem;
+}
+
+.accordion ul li a {}
+
+.accordion ul li:last-child {
+    border-bottom: none;
+}

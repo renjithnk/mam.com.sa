@@ -1,0 +1,63 @@
+*,
+*:hover,
+*:focus {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+ul,
+p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: .9rem;
+    transition: all 0.25s linear 0s;
+
+    &::after {
+        transition: all 0.25s linear 0s;
+
+        &:hover {
+            transition: all 0.25s linear 0s;
+        }
+    }
+
+    &:hover {
+        transition: all 0.25s linear 0s;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    // image-rendering: optimizespeed;
+}

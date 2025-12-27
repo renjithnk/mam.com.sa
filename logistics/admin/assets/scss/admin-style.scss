@@ -1,0 +1,508 @@
+// Abstracts
+@import '../scss/abstracts/functions';
+@import '../scss/abstracts/helpers';
+@import '../scss/abstracts/mixins';
+@import '../scss/abstracts/variables';
+
+// Base
+@import '../scss/base/reset';
+@import '../scss/base/typography';
+
+// Components
+@import '../scss/components/accordion';
+@import '../scss/components/buttons';
+@import '../scss/components/carousels';
+@import '../scss/components/tabs';
+@import '../scss/components/tables';
+
+// Layouts
+@import '../scss/layouts/containers';
+@import '../scss/layouts/footer';
+@import '../scss/layouts/forms';
+@import '../scss/layouts/header';
+@import '../scss/layouts/navigation';
+
+// Vendors
+@import '../scss/vendors/swiper';
+
+// Admin Header: Start
+.admin-header {
+    border-bottom: 1px solid #cdcdcd;
+
+    &__container {
+        display: flex;
+        // border: 2px solid red;
+        align-items: center;
+        justify-content: space-between;
+        height: 5rem;
+        background: #fff;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &__logo {
+        width: 7rem;
+
+        @include lg() {
+            width: 12rem;
+        }
+    }
+
+    &__navigation {
+        font-size: .8rem;
+        border: 1px solid #cdcdcd;
+        padding: 0.35rem 0.5rem;
+        border-radius: 0.35rem;
+        position: absolute;
+        left: 1rem;
+        top: 5rem;
+        background: white;
+    }
+
+    &__navigation-trigger {}
+
+    &__navigation-content {
+        display: none;
+    }
+
+    &__navigation-content--show {
+        display: block;
+    }
+
+    &__navigation-ul {}
+
+    &__navigation-li {}
+
+    &__navigation-link {}
+
+    &__logout {
+        cursor: pointer;
+        font-size: .8rem;
+        border: 1px solid #cdcdcd;
+        padding: 0.35rem 0.5rem;
+        border-radius: 0.35rem;
+        position: absolute;
+        right: 4rem;
+        top: 5.35rem;
+        background: white;
+    }
+
+    &__user-details {
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        right: 1rem;
+        top: 5rem;
+    }
+
+    &__user-details-img {
+        border-radius: 100%;
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: cover;
+    }
+
+}
+
+.admin-sidebar__trigger {
+    font-size: .7rem;
+    border: 1px solid #cdcdcd;
+    padding: 0.35rem;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (min-width:768px) {
+    .admin-sidebar__trigger {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:576px) {
+    .admin-header {
+        &__container {}
+
+        &__logo {}
+
+        &__navigation {}
+
+        &__navigation-trigger {}
+
+        &__navigation-content {}
+
+        &__navigation-ul {}
+
+        &__navigation-li {}
+
+        &__navigation-link {}
+
+        &__user-details {}
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .admin-header {
+        &__container {}
+
+        &__logo {}
+
+        &__navigation {
+            position: static;
+            border: none;
+            margin-left: auto;
+            margin-right: 1rem;
+        }
+
+        &__navigation-trigger {
+            display: none;
+        }
+
+        &__navigation-content {
+            display: block;
+        }
+
+        &__navigation-ul {
+            display: flex;
+            column-gap: 1rem;
+        }
+
+        &__navigation-li {}
+
+        &__navigation-link {}
+
+        &__user-details {
+            position: static;
+            // margin-left: auto;
+            margin-left: 1rem;
+        }
+
+        &__logout {
+            position: static;
+        }
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .admin-header {
+        &__container {}
+
+        &__logo {}
+
+        &__navigation {}
+
+        &__navigation-trigger {}
+
+        &__navigation-content {}
+
+        &__navigation-ul {}
+
+        &__navigation-li {}
+
+        &__navigation-link {}
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .admin-header {
+        &__container {}
+
+        &__logo {}
+
+        &__navigation {}
+
+        &__navigation-trigger {}
+
+        &__navigation-content {}
+
+        &__navigation-ul {}
+
+        &__navigation-li {}
+
+        &__navigation-link {}
+    }
+}
+
+
+
+
+
+
+
+
+
+// Admin Header: End
+
+
+.admin-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    top: 4.05rem;
+    height: 100%;
+    left: -100%;
+    transition: all 0.35s ease-in-out 0s;
+    padding: 1.5rem;
+
+    &__navigation-heading {
+        background: #f5f5f5;
+        border: 1px solid #e5e5e5;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #555;
+    }
+
+    &__blocks-heading {
+        margin-bottom: 0;
+        font-size: .9rem;
+        margin-left: 0.5rem;
+        background: none;
+        padding: 0.35rem;
+        border: 1px solid #cdcdcd;
+    }
+
+    &__navigation-ul {
+        padding: 0.75rem 1.5rem;
+    }
+
+    &__navigation-li {
+        line-height: 1.15;
+    }
+
+    &__navigation-link {
+        height: 1rem;
+        font-size: .8rem;
+
+    }
+
+}
+
+.admin-sidebar--active {
+    left: 0;
+}
+
+@media only screen and (min-width:768px) {
+    .admin-sidebar {
+        position: static;
+        border: 1px solid #cdcdcd;
+        border-radius: 0.5rem;
+        background-color: white;
+    }
+}
+
+.admin-content {
+    height: 100%;
+    padding-top: 4rem;
+    // background: $brand-color2;
+    // border: 2px solid red;
+    // border: 2px solid red;
+}
+
+@media only screen and (min-width:768px) {
+    .admin-content {
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .admin-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        grid-template-columns: 17rem 1fr;
+        // min-height: 90vh;
+    }
+}
+
+
+
+
+
+// Admin Main Section: Start
+.admin-main-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    grid-auto-rows: max-content;
+
+    &__content {
+        background: #fff;
+        padding: 1.5rem;
+        border: 1px solid #cdcdcd;
+        border-radius: 0.5rem;
+        height: 100%;
+        display: grid;
+        grid-gap: 1rem;
+        grid-auto-rows: max-content;
+    }
+
+    &__content-item {
+        background: #f5f5f5;
+        padding: 2rem;
+        border-radius: 0.35rem;
+        font-weight: 500;
+        font-size: 1.15rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        font-weight: 400;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .admin-main-section {
+        margin-top: 1rem;
+        padding-right: 0;
+    }
+}
+
+// Admin Main Section: End
+
+
+// Admin Footer: Start
+.admin-footer {
+    background: #ffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid #cdcdcd;
+    text-align: center;
+    margin-top: auto;
+
+    &__copyright {
+        font-size: .7rem;
+    }
+}
+
+// Admin Footer: End
+
+
+// Dashboard: Start
+.dashboard {
+    &__contents {
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    &__contents-items {
+        background: #f5f5f5;
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        padding-left: 1.5rem;
+        column-gap: 1rem;
+    }
+
+    &__contents-icon {}
+
+    &__contents-icon-img {
+        height: 2rem;
+    }
+
+    &__contents-items-label {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+
+@media only screen and (min-width:576px) {
+    .dashboard {}
+}
+
+@media only screen and (min-width:768px) {
+    .dashboard {
+        &__contents {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__contents-items {
+            height: 13rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        &__contents-items-label {
+            font-size: 1.25rem;
+        }
+
+        &__contents-icon-img {
+            height: 2.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .dashboard {}
+}
+
+@media only screen and (min-width:1200px) {
+    .dashboard {}
+}
+
+
+// Dashboard: End 
+
+
+.form-success {
+    padding: 1rem;
+    border: 1px solid yellowgreen;
+    margin-top: .75rem;
+    background: #f4fdee;
+}
+
+/* Admin Style: Start */
+.admin-login {
+    margin-top: 9rem;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin-login__logo-container {
+    text-align: center;
+}
+
+
+table tr td:nth-child(1) {
+    width: 300px;
+    white-space: break-spaces;
+}
+
+table tr td:nth-child(2) {
+    width: 200px;
+    white-space: break-spaces;
+}
+
+table tr td:nth-child(3) {
+    width: 200px;
+    white-space: break-spaces;
+}
+
+table tr td:nth-child(4) {
+    width: 200px;
+    white-space: break-spaces;
+}
+
+table tr td:nth-child(5) {
+    width: 200px;
+    white-space: break-spaces;
+}
+
+table tr td:nth-child(6) {
+    width: 100px;
+    white-space: break-spaces;
+}

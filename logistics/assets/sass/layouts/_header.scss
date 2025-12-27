@@ -1,0 +1,548 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+
+.aegis-site-header {
+    border-top: .7rem solid $brand-color1;
+
+    &__container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    &__logo {
+        width: 170px;
+    }
+}
+
+.request-quote-and-badge-wrapper {
+    display: flex;
+    position: absolute;
+    top: 4.25rem;
+    background: #f9f9f9;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    margin: auto;
+    height: 3rem;
+    column-gap: 0.75rem;
+
+    @media only screen and (min-width:576px) {
+        column-gap: 3rem;
+    }
+
+    @include lg-min {
+        margin-right: 2rem;
+    }
+
+    @media only screen and (min-width:1200px) {
+        position: relative;
+        top: 0;
+        width: auto;
+        background: none;
+    }
+}
+
+
+
+@media only screen and (min-width:1200px) {
+    .aegis-site-header {
+        border-top-width: 1rem;
+
+        &__container {
+            display: flex;
+            column-gap: 2rem;
+            margin-left: 7rem;
+            padding-left: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 6rem;
+        }
+
+        &__logo {
+            // width: auto;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+.parent-company-badge {
+    column-gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+    zoom: .80;
+    text-align: left;
+
+    &__logo {
+        width: 2.5rem;
+    }
+
+    &__label {
+        line-height: 1;
+        font-weight: 600;
+        font-size: 0.75rem;
+        letter-spacing: -.001rem;
+        color: $brand-color2-dark-variation1;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    &__label-line1 {}
+
+    &__label-line2 {
+
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .parent-company-badge {
+        margin-left: auto;
+        text-align: center;
+    }
+}
+
+
+
+.social-media {
+    position: absolute;
+    top: 8rem;
+
+    @media only screen and (min-width:1200px) {
+        top: 6.05rem;
+        left: 3.55rem;
+    }
+
+    &__link {
+        width: 2.15rem;
+        height: 2.15rem;
+        display: flex;
+        background: white;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #cdcdcd;
+        margin: -1px;
+
+        &:hover {
+            background: $brand-color2;
+
+            .social-media__link-img-white {
+                display: block;
+                width: 1.15rem;
+                height: 1.15rem;
+            }
+
+            .social-media__link-img {
+                display: none;
+                width: 1.15rem;
+                height: 1.15rem;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+
+    &__link-img {
+        width: 1.15rem;
+        height: 1.15rem;
+
+        &:hover {
+            fill: white;
+        }
+    }
+
+    &__link-img-white {
+        display: none;
+    }
+
+    &__label {
+        display: none;
+
+        @media only screen and (min-width:1200px) {
+            display: flex;
+            transform: rotate(-90deg);
+            margin-left: -1.1rem;
+            margin-top: 3rem;
+        }
+    }
+}
+
+.aegis-header-static-box,
+.aegis-header-static-box2 {
+    display: grid;
+    width: 100%;
+
+
+
+    @media only screen and (min-width:992px) {
+        // margin-left: 6rem;
+    }
+
+    @media only screen and (min-width:1200px) {
+        grid-template-columns: 20rem 1fr;
+        margin-left: 7rem;
+    }
+
+    &__col1 {
+        background: #f5f5f5;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+
+
+
+        @media only screen and (min-width:1200px) {
+            justify-content: center;
+            height: 100%;
+        }
+    }
+
+    &__col1-box {
+        display: flex;
+        column-gap: 0.5rem;
+        width: 15rem;
+    }
+
+    &__col1-box-icon {
+        width: 2.5rem;
+    }
+
+    &__col1-box-text {
+        font-size: .9rem;
+        line-height: 1.35;
+    }
+
+    &__col2 {
+        background: $brand-color2;
+        color: white;
+        padding-left: 2rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+
+        @media only screen and (min-width:576px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 4rem;
+        }
+
+        @media only screen and (min-width:1200px) {
+            padding-left: 6rem;
+            column-gap: 10rem;
+        }
+    }
+
+    &__col2-emails-label {
+        display: flex;
+        column-gap: 0.5rem;
+        font-size: .8rem;
+        margin-bottom: .35rem;
+    }
+
+    &__col2-emails-label-icon {
+        width: 0.9rem;
+    }
+
+    &__col2-emails-container {
+        line-height: 1.35;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__col2-emails-links {
+        color: white;
+    }
+
+    &__col2-telno-link {
+        color: white;
+        font-size: 1.25rem;
+
+        @include xl-min {
+            font-size: 1.5rem;
+        }
+
+        @include xxl-min {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__col2-telno {
+        line-height: 1.35;
+    }
+
+    &__col2-telno-label {
+        display: flex;
+        font-size: .8rem;
+        align-items: center;
+        column-gap: 0.35rem;
+    }
+}
+
+
+
+.subpage-banner {
+    margin-top: 3.05rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 10rem;
+
+    @include xl-min {
+        margin-top: 0;
+        height: 20rem;
+        margin-left: 7rem;
+    }
+
+    &::after {
+        content: " ";
+        background: #000;
+        opacity: 0.35;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    &__heading {
+        position: absolute;
+        z-index: 10;
+        color: white;
+        margin-left: 5rem;
+        line-height: 1;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        width: 50%;
+
+        @include xl-min {
+            font-size: 3rem;
+            font-weight: 700;
+            width: auto;
+        }
+
+        &:after {
+            content: " ";
+            height: 0.25rem;
+            background: #0797ce;
+            width: 100%;
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        @include xl-min {
+            margin-left: 6rem;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: -1;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+
+.subpage-banner2 {
+    margin-top: 3.05rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 10rem;
+
+    @include xl-min {
+        margin-top: 0;
+        height: 23rem;
+        margin-left: 7rem;
+    }
+
+    &::after {
+        content: " ";
+        background: #000;
+        opacity: 0.35;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    &__heading {
+        position: absolute;
+        z-index: 10;
+        color: white;
+        margin-left: 5rem;
+        line-height: 1;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+        @include xl-min {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        &:after {
+            content: " ";
+            height: 0.25rem;
+            background: #0797ce;
+            width: 100%;
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        @include xl-min {
+            margin-left: 6rem;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: -1;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+
+
+.request-a-quote-btn {
+    &__link {
+        background: $brand-color2;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .5rem;
+        border: none;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        &:hover {
+            background: $brand-color1;
+            color: white;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        @include md-min {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+        }
+
+        @include lg-min {
+            font-size: 1rem;
+            height: 3rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+
+    &__icon {
+        width: 1rem;
+    }
+}
+
+
+.floating-buttons {
+    position: fixed;
+    display: flex;
+    gap: 0.35rem;
+    bottom: 5.2rem;
+    right: 1rem;
+    flex-direction: column;
+
+    @include md-min {
+        right: 1.5rem;
+        top: 23rem;
+        left: initial;
+        flex-direction: column;
+    }
+
+    @include xl-min {
+        top: 40vh;
+    }
+
+    @include xxl-min {}
+
+    &__links {
+        border-radius: 100%;
+        width: 3.25rem;
+        height: 3.25rem;
+        padding: 0.45rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+        @include lg-min {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    &__links.whatsapp {
+        background: #11bf38;
+        padding-bottom: 0.6rem;
+        padding-top: 0.6rem;
+    }
+
+    &__links.telecall {
+        background: $brand-color2;
+        padding-bottom: 0.6rem;
+        padding-top: 0.6rem;
+
+        img {
+            width: 1.25rem;
+
+            @include lg-min {
+                width: 1.30rem;
+            }
+        }
+    }
+
+    .whatsapp__icon {
+        width: 1.75rem;
+    }
+
+    &__links.gmblocation {
+        background: $brand-color1;
+        padding-bottom: 0.6rem;
+        padding-top: 0.6rem;
+
+        img {
+            width: 1.15rem;
+
+            @include lg-min {}
+        }
+    }
+
+}

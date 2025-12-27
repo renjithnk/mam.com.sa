@@ -1,0 +1,28 @@
+table {
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+
+    th {
+        border: 1px solid #cdcdcd;
+        padding: .5rem;
+        font-size: .85rem;
+        background: #f7f7f7;
+    }
+
+    tr {
+        td {
+            border: 1px solid #cdcdcd;
+            padding: 0.20rem .75rem;
+            margin: 0;
+            font-size: .9rem;
+
+            img {
+                max-width: 15rem;
+            }
+        }
+    }
+}

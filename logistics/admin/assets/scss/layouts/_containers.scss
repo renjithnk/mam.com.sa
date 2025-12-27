@@ -1,0 +1,123 @@
+/* Containers: Start */
+
+section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-fluid {}
+
+@media only screen and (min-width:1200px) {
+    .container {
+        width: 70rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.site-content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+
+/* ----------------- Containers: Start --------------- */
+
+/* Site Content: Start */
+.site-content {}
+
+.site-content__section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* border: 1px solid red; */
+}
+
+@media only screen and (min-width:768px) {
+    .site-content__section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        /* border: 1px solid red; */
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .site-content__section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        /* border: 1px solid red; */
+    }
+}
+
+/* Site Content: End */
+
+/* Container: Start */
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+@media only screen and (min-width:992px) {
+    .container {
+        width: 70rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Container: End */
+
+/* Container Fluid: Start */
+.container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.container-fluid--no-padding {
+    padding: 0;
+}
+
+/* Container Fluid: End */
+
+/* ------------------ Containers: End ------------------ */
+
+
+
+
+
+
+
+/* ----------------------- Aside: Start ----------------------- */
+aside {
+    /* border: 1px solid red; */
+}
+
+aside article {
+    padding-bottom: 2rem;
+    /* border: 1px solid green; */
+}
+
+aside article:last-child {
+    padding-bottom: 2rem;
+}
+
+aside article:last-of-type {
+    padding-bottom: 0;
+}
+
+/* ----------------------- Aside: End ----------------------- */
+
+/* Containers: End */
+
+
+/* Containers: End */

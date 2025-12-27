@@ -1,0 +1,746 @@
+// @use "../abstracts/variables" as *;
+// @use "../abstracts/mixins" as *;
+
+
+.alim-airlines-parners {
+    margin-top: 15rem;
+    overflow-x: hidden;
+
+    @include md() {
+        margin-top: 8rem;
+    }
+
+    @include lg() {
+        margin-top: 4rem;
+    }
+
+    @include xl() {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    &__heading {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        display: none;
+    }
+
+    &__slide {
+        text-align: center;
+    }
+
+    &__pagination {
+        text-align: center;
+
+        @include lg() {
+            margin-top: 2rem;
+        }
+    }
+
+    &__logo {
+        width: auto;
+        height: 3rem;
+        max-width: 10rem;
+    }
+}
+
+
+.aegis-member {
+    @include lg() {
+        height: 20rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &__container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @include md() {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__col1 {
+        display: flex;
+        color: white;
+
+        &-img {
+            object-fit: cover;
+            width: 100%;
+            height: 10rem;
+
+            @include md() {
+                height: 17rem;
+            }
+        }
+    }
+
+    &__col2 {
+        background: $brand-color2;
+        padding: 2rem;
+
+        @include md() {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .aegis-member-box {
+        border: 1px solid #fff;
+
+        @include lg() {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 80%;
+        }
+
+        &__col1 {
+            padding: 1rem;
+        }
+
+        &__col2 {
+            background: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        &__heading {
+            font-size: .8rem;
+            margin-bottom: .5rem;
+            color: white;
+        }
+
+        &__p {
+            color: white;
+            font-size: .8rem;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+.service-list-box {
+
+    @include lg() {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    &__container {
+        grid-gap: 1rem;
+        display: grid;
+
+        @include sm() {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__items {
+        background: #efefef;
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+        padding-bottom: 2rem;
+        grid-gap: 1rem;
+
+        &:hover {
+            background: #d8d8d8;
+        }
+
+        @include xl() {
+            grid-template-columns: 13rem 1fr;
+            grid-gap: 2rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    &__name {
+        margin-top: 3rem;
+        font-weight: 600;
+        font-size: .90rem;
+
+        @include xl() {
+            font-size: 1rem;
+            margin-top: 4rem;
+        }
+    }
+}
+
+
+
+.service-list-box-vertical {
+    display: grid;
+    grid-gap: .5rem;
+    grid-auto-rows: max-content;
+
+
+    &__container {
+        grid-gap: 1rem;
+        display: grid;
+
+        @include sm() {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__items {
+        background: #efefef;
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+        padding-bottom: 1.5rem;
+        grid-gap: 1rem;
+
+        &:hover {
+            background: #d8d8d8;
+        }
+
+        @include xl() {
+            // grid-template-columns: 13rem 1fr;
+            grid-gap: 2rem;
+        }
+    }
+
+    &__name {
+        margin-top: 2rem;
+        font-weight: 600;
+        font-size: .90rem;
+
+    }
+}
+
+
+.alim-safe {
+    @include lg() {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    &__container {
+        @include md() {
+            display: grid;
+            grid-template-columns: 18rem 1fr;
+        }
+
+        @include xl() {
+            grid-template-columns: 26rem 1fr;
+        }
+
+    }
+
+    &__col1 {
+        display: flex;
+    }
+
+    &__img {
+        height: 15rem;
+        object-fit: cover;
+        width: 100%;
+        display: flex;
+
+        @include md() {
+            height: 27rem;
+        }
+    }
+
+    &__col2 {
+        padding: 1.5rem;
+        border: 1px solid #cdcdcd;
+        align-items: center;
+        display: grid;
+
+        @include md() {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        @include xl() {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+    }
+
+    &__bullet-box {
+        margin-bottom: 1rem;
+    }
+
+    &__ul {
+        @include md() {
+            column-count: 2;
+        }
+    }
+
+    &__li {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 0.5rem;
+        line-height: 1.5;
+
+        &::before {
+            content: " ";
+            background-image: url(../../assets/images/bullet-arrow.svg);
+            background-size: 1rem;
+            display: flex;
+            width: 1rem;
+            height: 0.7rem;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 0.4rem;
+        }
+    }
+}
+
+
+
+.alim-discount {
+    @include lg() {
+        margin-left: 6rem;
+    }
+
+    &__container {
+        padding-right: 0;
+    }
+
+    &__img {
+        display: flex;
+        object-fit: cover;
+        width: 100%;
+
+        @include md() {
+            height: 25rem;
+        }
+
+        @include lg() {
+            height: 30rem;
+        }
+    }
+
+    &__caption-box {
+        background: $brand-color2;
+        padding: 1.2rem;
+
+        @include md() {
+            width: 15rem;
+            position: absolute;
+            top: 3rem;
+            left: 4rem;
+            padding: 2rem;
+        }
+
+        @include lg() {
+            width: 20rem;
+            padding: 4rem;
+            left: 5rem;
+            top: 4rem;
+        }
+    }
+
+    &__caption-text {
+        line-height: 1;
+        position: relative;
+        color: white;
+        margin-bottom: 0;
+
+        &::after {
+            content: " ";
+            height: 0.25rem;
+            background: #fff;
+            width: 90%;
+            display: flex;
+            margin-top: 1rem;
+        }
+    }
+
+    &__description-box {
+        background: #f5f5f5;
+        padding: 1.5rem;
+
+        @include md() {
+            position: absolute;
+            bottom: -4rem;
+            width: 28rem;
+            right: 3rem;
+            padding: 2.5rem;
+        }
+
+        @include lg() {
+            width: 36rem;
+            right: 6rem;
+        }
+    }
+}
+
+
+
+.alim-visa-brief {
+
+    @include lg() {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    &__container {
+        @include md() {
+            display: grid;
+            grid-template-columns: 1fr 17rem;
+        }
+
+        @include xl() {
+            grid-template-columns: 1fr 26rem;
+
+        }
+    }
+
+    &__col1 {
+        border: 1px solid #cdcdcd;
+        padding: 1.5rem;
+        display: grid;
+        align-items: center;
+
+        @include md() {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        @include lg() {
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+    }
+
+    &__img {
+        height: 15rem;
+        object-fit: cover;
+        width: 100%;
+        display: flex;
+
+        @include md() {
+            height: 25rem
+        }
+    }
+}
+
+
+
+.alim-delight {
+    @include lg() {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    &__heading {
+        text-align: center;
+
+        @include md() {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__listbox {
+        display: grid;
+
+        @include sm() {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        @include md() {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__listbox-heading {
+        font-size: .9rem;
+
+
+    }
+
+    &__listbox-items-img {
+        object-fit: cover;
+        width: 100%;
+        height: 9rem;
+    }
+
+    &__description-box {
+        text-align: center;
+    }
+}
+
+
+
+
+.alim-tailor {
+    @include lg() {
+        margin-left: 6rem;
+    }
+
+    &__container {
+        padding-right: 0;
+    }
+
+    &__img {
+        display: flex;
+        object-fit: cover;
+        width: 100%;
+
+        @include md() {
+            height: 25rem;
+        }
+
+        @include lg() {
+            height: 30rem;
+        }
+    }
+
+    &__caption-box {
+        background: $brand-color2;
+        padding: 1.2rem;
+
+        @include md() {
+            width: 15rem;
+            position: absolute;
+            top: 3rem;
+            right: 4rem;
+            padding: 2rem;
+        }
+
+        @include lg() {
+            width: 20rem;
+            padding: 4rem;
+            right: 5rem;
+            top: 4rem;
+        }
+    }
+
+    &__caption-text {
+        line-height: 1;
+        position: relative;
+        color: white;
+        margin-bottom: 0;
+
+        &::after {
+            content: " ";
+            height: 0.25rem;
+            background: #fff;
+            width: 90%;
+            display: flex;
+            margin-top: 1rem;
+        }
+    }
+
+    &__description-box {
+        background: #f5f5f5;
+        padding: 1.5rem;
+
+        @include md() {
+            position: absolute;
+            bottom: -4rem;
+            width: 28rem;
+            left: 3rem;
+            padding: 2.5rem;
+        }
+
+        @include lg() {
+            width: 36rem;
+            left: 6rem;
+        }
+    }
+}
+
+
+
+
+
+.alim-mice {
+    @include lg() {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    &__container {
+        @include md() {
+            display: grid;
+            grid-template-columns: 18rem 1fr;
+        }
+
+        @include xl() {
+            grid-template-columns: 26rem 1fr;
+        }
+
+    }
+
+    &__col1 {
+        display: flex;
+    }
+
+    &__img {
+        height: 15rem;
+        object-fit: cover;
+        width: 100%;
+        display: flex;
+
+        @include md() {
+            height: 27rem;
+        }
+    }
+
+    &__col2 {
+        padding: 1.5rem;
+        border: 1px solid #cdcdcd;
+        display: grid;
+        align-items: center;
+
+        @include md() {
+            padding: 2.5rem
+        }
+
+        @include lg() {
+            padding: 4rem
+        }
+
+        @include lg() {
+            padding: 5rem
+        }
+    }
+
+    &__bullet-box {
+        margin-bottom: 1rem;
+    }
+
+    &__ul {
+        @include md() {
+            column-count: 2;
+        }
+    }
+
+    &__li {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 0.5rem;
+        line-height: 1.5;
+
+        &::before {
+            content: " ";
+            background-image: url(../../assets/images/bullet-arrow.svg);
+            background-size: 1rem;
+            display: flex;
+            width: 1rem;
+            height: 0.7rem;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 0.4rem;
+        }
+    }
+}
+
+
+
+.alim-question {
+    &__container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @include md() {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__heading {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+
+        @include md() {
+            font-size: 1.15rem;
+        }
+    }
+
+    &__call-container {
+        @include lg() {
+            position: absolute;
+            left: 7rem;
+            width: 20rem;
+        }
+
+        @include xl() {
+            width: 27rem;
+        }
+    }
+
+    &__col1 {
+        background: #efefef;
+        padding: 1.5rem 1rem;
+
+        @include md() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__call-box {
+        display: flex;
+        align-items: center;
+        background: white;
+        border: 1px solid #cdcdcd;
+        padding: 1rem;
+        justify-content: center;
+        column-gap: 0.5rem;
+    }
+
+    &__call-box-img {
+        height: 10rem;
+        object-fit: cover;
+        width: 100%;
+
+        @include md() {
+            height: 17rem;
+            display: flex;
+
+        }
+    }
+
+    &__call-label {
+        font-weight: 600;
+        font-size: 1.25rem;
+
+        @include xl() {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__call-number {
+        font-weight: 600;
+        font-size: 1.10rem;
+
+        @include xl() {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__call-icon {
+        background: #0797ce;
+        width: 2rem;
+        height: 2rem;
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+
+    &__call-number-wrapper {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+    }
+}

@@ -1,0 +1,42 @@
+
+/* 6. Forms: Start */ 
+
+.form-container {
+ padding-top: 1rem;
+ padding-bottom: 1rem;
+}
+
+.form-container input,
+.form-container textarea {
+ width: 100%;
+ border: 1px solid #cdcdcd;
+ padding: .75rem;
+ border-radius: .25rem;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+ outline: none;
+ border: 1px solid $brand-color2; 
+}
+
+.form-container .input-container {
+ display: flex;
+ flex-direction: column;
+ margin-bottom: .75rem;
+}
+
+.form-container .input-container label {
+ margin-bottom: .5rem;
+}
+
+.form-container .input-group {
+ display: flex;
+ column-gap: 1rem;
+}
+
+.form-container .input-group>.input-container {
+ flex: 1;
+}
+
+/* 6. Forms: End */

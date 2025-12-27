@@ -1,0 +1,97 @@
+@import 'variables';
+
+// Flex
+@mixin display($value) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: $value;
+}
+
+@mixin align-items($value) {
+    -webkit-box-align: $value;
+    -moz-box-align: $value;
+    -ms-flex-align: $value;
+    -webkit-align-items: $value;
+    align-items: $value;
+}
+
+@mixin justify-content($value) {
+    -webkit-box-pack: $value;
+    -ms-flex-pack: $value;
+    justify-content: $value;
+}
+
+// Animation
+
+@mixin animation ($name, $duration, $timing, $delay, $iteration, $direction, $fillmode, $playstate ) {
+    -webkit-animation: $name $duration $timing $delay $iteration $direction $fillmode $playstate;
+    -moz-animation: $name $duration $timing $delay $iteration $direction $fillmode $playstate;
+    -o-animation: $name $duration $timing $delay $iteration $direction $fillmode $playstate;
+    animation: $name $duration $timing $delay $iteration $direction $fillmode $playstate;
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+
+    @-o-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+// Transition
+
+@mixin transition($elements, $duration, $type, $delay) {
+    -webkit-transition: $elements $duration $type $delay;
+    -o-transition: $elements $duration $type $delay;
+    transition: $elements $duration $type $delay;
+}
+
+// Transformation
+
+@mixin rotate($value) {
+    -webkit-transform: rotate(#{$value}deg);
+    -ms-transform: rotate(#{$value}deg);
+    transform: rotate(#{$value}deg);
+}
+
+// Media Queries
+
+@mixin sm() {
+    @media only screen and (min-width:$sm) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media only screen and (min-width:$md) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media only screen and (min-width:$lg) {
+        @content;
+    }
+}
+
+@mixin xl() {
+    @media only screen and (min-width:$xl) {
+        @content;
+    }
+}
