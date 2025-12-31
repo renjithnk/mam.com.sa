@@ -27,10 +27,10 @@
           <h4 class="contact-us-page-contact-box__heading">E-mail</h4>
           <div class="contact-us-page-contact-box__content">
             <p><a href="mailto:<?php echo $aegisSettingsResultRow['email1'];?> class="aegis-site-footer__contact-box-links"><?php echo $aegisSettingsResultRow['email1'];?></a></p>
-            <p class="aegis-site-footer__contact-box-p">
+            <!-- <p class="aegis-site-footer__contact-box-p">
                 <a href="mailto:<?php echo $aegisSettingsResultRow['email2'];?>" class="aegis-site-footer__contact-box-links"><?php echo $aegisSettingsResultRow['email2'];?>
                 </a>
-                </p>
+                </p> -->
           </div>
         </div>
         <div class="contact-us-page-contact-box__items">

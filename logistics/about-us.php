@@ -36,8 +36,8 @@ if(@$result->num_rows > 0)
                     <a href="mailto:<?php echo $aegisSettingsResultRow['email1'];?>"
                         class="aegis-header-static-box__col2-emails-links"><?php echo $aegisSettingsResultRow['email1'];?></a>
                     <span class="aegis-header-static-box__col2-emails-splitter"></span>
-                    <a href="mailto:<?php echo $aegisSettingsResultRow['email2'];?>"
-                        class="aegis-header-static-box__col2-emails-links"><?php echo $aegisSettingsResultRow['email2'];?></a>
+                    <!-- <a href="mailto:<?php echo $aegisSettingsResultRow['email2'];?>"
+                        class="aegis-header-static-box__col2-emails-links"><?php echo $aegisSettingsResultRow['email2'];?></a> -->
                 </div>
             </div>
             <div class="aegis-header-static-box__col2-telno">

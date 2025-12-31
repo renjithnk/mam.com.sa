@@ -261,11 +261,21 @@
     &__col2-emails-container {
         line-height: 1.35;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;  
+        a { 
+            &:last-child {
+            display: none;
+        }
+        }
     }
 
     &__col2-emails-links {
         color: white;
+            a {
+            &:last-child {
+            display: none;
+        }
+        }
     }
 
     &__col2-telno-link {

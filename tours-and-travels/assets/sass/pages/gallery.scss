@@ -2,7 +2,7 @@
 @import "../abstracts/mixins";
 
 /* required style starts */
-
+ 
 /* Preload images */
 body:after {
     content: url(../images/close.svg) url(../images/loading.gif) url(../images/prev.svg) url(../images/next.svg);
