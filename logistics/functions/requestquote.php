@@ -98,7 +98,7 @@ if ($responseData->success)
 						$subject="Request A Quote";
 						if(($url === "mam.com.sa") || ($url === "www.mam.com.sa"))
 						{
-							$to="prince.ezone@gmail.com";
+							$to="sales@mam.com.sa";
 						}
 						else
 						{
@@ -172,7 +172,7 @@ if ($responseData->success)
 								   $mail->AddAddress($to,"");
 								   if(($url === "mam.com.sa") || ($url === "www.mam.com.sa"))
 								   {
-										$mail->AddCC("prince.ezone@gmail.com");
+										$mail->AddCC("rates@mam.com.sa");
 								   }
 								   
 								   //$mail->AddCC("renjithnks@gmail.com");  // Please remove after testing

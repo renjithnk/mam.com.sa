@@ -61,12 +61,12 @@ if ($responseData->success)
 					$subject="Enquiry";	
 					if(($url === "mam.com.sa") || ($url === "www.mam.com.sa"))
 					{
-							$to="prince.ezone@gmail.com";
+							$to="sales@mam.com.sa"; // "prince.ezone@gmail.com";
 					}
 					else
 					{
-								 $to="regibright027@gmail.com";
-								// $to = "renjithnks@gmail.com";
+							$to="regibright027@gmail.com";
+							// $to = "renjithnks@gmail.com";
 					}
 					if($to != "")
 					{

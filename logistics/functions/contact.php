@@ -59,7 +59,7 @@ require '../../PHPMailer/src/SMTP.php';
 					$subject="Enquiry";	
 					if(($url === "mam.com.sa") || ($url === "www.mam.com.sa"))
 					{
-						$to="prince.ezone@gmail.com";
+						$to="sales@mam.com.sa";
 					}
 					else
 					{
