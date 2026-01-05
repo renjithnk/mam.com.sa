@@ -200,8 +200,6 @@
         align-items: center;
         padding-left: 2rem;
 
-
-
         @media only screen and (min-width:1200px) {
             justify-content: center;
             height: 100%;
@@ -218,7 +216,7 @@
         width: 2.5rem;
     }
 
-    &__col1-box-text {
+    &__col1-box-text { 
         font-size: .9rem;
         line-height: 1.35;
     }
@@ -264,16 +262,17 @@
         flex-direction: column;  
         a { 
             &:last-child {
-            display: none;
+            // display: none;
         }
         }
     }
 
     &__col2-emails-links {
         color: white;
+        
             a {
             &:last-child {
-            display: none;
+            // display: none;
         }
         }
     }

@@ -1291,17 +1291,9 @@ input[type=date]:valid::before {
   display: flex;
   flex-direction: column;
 }
-.aegis-header-static-box__col2-emails-container a:last-child,
-.aegis-header-static-box2__col2-emails-container a:last-child {
-  display: none;
-}
 .aegis-header-static-box__col2-emails-links,
 .aegis-header-static-box2__col2-emails-links {
   color: white;
-}
-.aegis-header-static-box__col2-emails-links a:last-child,
-.aegis-header-static-box2__col2-emails-links a:last-child {
-  display: none;
 }
 .aegis-header-static-box__col2-telno-link,
 .aegis-header-static-box2__col2-telno-link {

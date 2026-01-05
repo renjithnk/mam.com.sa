@@ -1,0 +1,42 @@
+name: SFTP Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+
+      - name: Deploy to BigRock via SFTP
+        env:
+          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+        run: |
+          lftp <<EOF
+          set sftp:auto-confirm yes
+          set net:timeout 20
+          set net:max-retries 2
+          set net:reconnect-interval-base 5
+          open -u "$SFTP_USERNAME","$SFTP_PASSWORD" sftp://mam.com.sa:22
+          mirror -R \
+            --only-newer \
+            --parallel=5 \
+            --exclude-glob .git* \
+            --exclude .github \
+            --exclude node_modules \
+            --exclude README.md \
+            --verbose \
+            ./ ./public_html/
+          bye
+          EOF
