@@ -24,7 +24,7 @@
     </script>End Google Tag Manager -->
 </head>
 
-<body class="main-index">
+<body class="main-index" style="border:2px solid red"> 
     <h1 class="main-index__heading">Welcome to Morooj Al Manar Group</h1>
     <div class="main-index__container">
         <div class="main-index__items">
