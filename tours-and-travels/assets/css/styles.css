@@ -423,6 +423,7 @@ aside article:last-of-type {
 @media only screen and (min-width: 992px) {
   .aegis-site-footer__logo {
     width: 150px;
+    height: auto;
   }
 }
 .aegis-site-footer__row1 {
