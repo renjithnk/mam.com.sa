@@ -940,7 +940,7 @@ aside article:last-of-type {
     height: 6rem;
   }
   .alim-site-header__logo {
-    width: 12rem;
+    width: 120px;
     display: flex;
     align-items: center;
   }

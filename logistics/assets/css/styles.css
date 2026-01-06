@@ -1058,7 +1058,7 @@ input[type=date]:valid::before {
   padding-top: 1rem;
 }
 .aegis-site-header__logo {
-  width: 170px;
+  width: 120px;
 }
 
 .request-quote-and-badge-wrapper {
@@ -4693,7 +4693,8 @@ body.lb-disable-scrolling {
   align-items: center;
 }
 .main-index__items-logo {
-  height: 4rem;
+  height: 50px;
+  border: 2px solid red;
   margin-bottom: 0.75rem;
 }
 
