@@ -10,10 +10,10 @@
 <div class="site-content__section subpage-main-content">
   <div class="subpage-content__section subpage-main-content__double-column-container container-fluid">
     <div class="subpage-main-content__col1">
-      <p>It's great to see that flights across the world are resuming and travel is opening up once again. With airlines gradually resuming flights to various destinations, travelers now have more opportunities to explore cities worldwide. Whether you are flying back home or planning a holiday, Alim Travel offers a wide range of flight options, including one-way, interconnecting, or return flights.</p>
+      <p>It's great to see that flights across the world are resuming and travel is opening up once again. With airlines gradually resuming flights to various destinations, travelers now have more opportunities to explore cities worldwide. Whether you are flying back home or planning a holiday, MAM Travel offers a wide range of flight options, including one-way, interconnecting, or return flights.</p>
       
       <p>We understand that travel safety is a top priority, and that's why we have partnered with reputable airlines such as Saudia, Emirates, Qatar, Etihad, and Lufthansa. These airline partners have implemented comprehensive health and safety measures to ensure your well-being throughout your journey. From enhanced cleaning protocols to social distancing measures, they have taken all the necessary steps to provide a safe and secure travel experience.</p>
-      <p>When you choose to travel with Alim  Travel, you can have peace of mind knowing that your safety is a priority. Our array of flight offers and options allows you to tailor your travel plans according to your preferences, making the world truly your oyster.</p>
+      <p>When you choose to travel with MAM Travel, you can have peace of mind knowing that your safety is a priority. Our array of flight offers and options allows you to tailor your travel plans according to your preferences, making the world truly your oyster.</p>
       <p>Feel confident and excited about your upcoming travels, knowing that our airline partners have your protection in mind. For more information or to book your next flight, please don't hesitate to reach out to us.</p>
       <p>Travel with confidence and enjoy your journey to the fullest!
 </p>

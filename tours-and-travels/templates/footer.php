@@ -30,7 +30,7 @@
             <div class="aegis-site-footer__contact-box">
                 <div class="aegis-site-footer__contact-box-items">
                     <h3 class="aegis-site-footer__contact-box-heading"><img src="../logistics/assets/images/reach-us-icon.svg" alt="" class="aegis-site-footer__contact-box-icon">Reach Us</h3>
-                    <p class="aegis-site-footer__contact-box-p">Aegis Logistics & International Movers (ALIM)
+                    <p class="aegis-site-footer__contact-box-p">MAM Logistics & International Movers
 Awidah street, Malaz,Riyadh - 12836, Kingdom of Saudi Arabia</p>
                 </div>
             <div class="aegis-site-footer__contact-box-items">
@@ -62,7 +62,7 @@ Awidah street, Malaz,Riyadh - 12836, Kingdom of Saudi Arabia</p>
                 <li class="aegis-site-footer-navbox-li"><a href="tailormade-packages.php" class="aegis-site-footer-navbox-links">Tailormade Packages</a></li>
             </ul>
             </div>
-            <div class="copyright">Copyright @ <span id="copyright_year"></span>. All Rights Reserved by Alim Al-Arab Tours and Travels</div>	
+            <div class="copyright">Copyright @ <span id="copyright_year"></span>. All Rights Reserved by MAM Tours and Travels</div>	
         </div>
     </div>
     

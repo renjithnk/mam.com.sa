@@ -93,7 +93,7 @@
     <div class="alim-safe__col2">
       <div class="alim-safe__content">
         <h2 class="alim-safe__heading">Safe and Secure Travel experience</h2>
-        <p class="alim-safe__p">When you choose to travel with Alim  Travel, you can have peace of mind knowing that your safety is a priority. Our array of flight offers and options allows you to tailor your travel plans according to your preferences, making the world truly your oyster. Followings are our features:</p>
+        <p class="alim-safe__p">When you choose to travel with MAM  Travel, you can have peace of mind knowing that your safety is a priority. Our array of flight offers and options allows you to tailor your travel plans according to your preferences, making the world truly your oyster. Followings are our features:</p>
         <div class="alim-safe__bullet-box">
           <ul class="alim-safe__ul">
             <li class="alim-safe__li">Competitive Price</li>
@@ -127,7 +127,7 @@
     <div class="alim-visa-brief__col1">
       <div class="alim-visa-brief__content">
         <h2 class="alim-visa-brief__heading">We have a full-fledged department for visa procurement.</h2>
-        <p class="alim-visa-brief__p">Alim Travel & Tourism have a full-fledged department for visa procurement. All you have to do is to contact us and provide us the necessary document and we will process your documents as needed.</p>
+        <p class="alim-visa-brief__p">MAM Travel & Tourism have a full-fledged department for visa procurement. All you have to do is to contact us and provide us the necessary document and we will process your documents as needed.</p>
         <a href="visa.php" class="btn1">More</a>
       </div>
     </div>
@@ -188,7 +188,7 @@
     <div class="alim-mice__col2">
       <div class="alim-mice__content">
         <h2 class="alim-mice__heading">We have a dedicated team of MICE</h2>
-        <p class="alim-mice__p">Alim Tours & Travel has a dedicated team of MICE (Meetings, Incentive Tours, Conferences, Exhibitions, and Events) professionals who are committed to working closely with clients from the planning stage to the execution of their events.</p>
+        <p class="alim-mice__p">MAM Tours & Travel has a dedicated team of MICE (Meetings, Incentive Tours, Conferences, Exhibitions, and Events) professionals who are committed to working closely with clients from the planning stage to the execution of their events.</p>
         
         <a href="mice.php" class="btn1">More</a>
       </div>

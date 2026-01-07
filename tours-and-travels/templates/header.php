@@ -18,7 +18,7 @@
     <meta property="og:description" content="alimarabia" >
     <meta property="og:image" content="https://www.alimarabia.com/assets/images/alimarabia-logo.svg" >
     <!-- Webpage Title -->
-    <title>Alim Al-Arab Tours and Travels</title>
+    <title>MAM Tours and Travels</title>
     <!-- Main CSS -->
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css" >
 </head>

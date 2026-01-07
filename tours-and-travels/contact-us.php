@@ -22,7 +22,7 @@
         <div class="contact-us-page-contact-box__items">
           <h4 class="contact-us-page-contact-box__heading">E-mail</h4>
           <div class="contact-us-page-contact-box__content">
-            <p><a href="mailto:reservations@alimarabia.com" class="aegis-site-footer__contact-box-links">reservations@alimarabia.com</a></p>
+            <p><a href="mailto:reservations@mam.com.sa" class="aegis-site-footer__contact-box-links">reservations@mam.com.sa</a></p>
             
           </div>
         </div>

@@ -10,11 +10,11 @@
 <div class="site-content__section subpage-main-content">
   <div class="subpage-content__section subpage-main-content__double-column-container container-fluid">
     <div class="subpage-main-content__col1">
-      <p>Alim Tours & Travel has a dedicated team of MICE (Meetings, Incentive Tours, Conferences, Exhibitions, and Events) professionals who are committed to working closely with clients from the planning stage to the execution of their events. Providing a customized program tailored to the specific aims and objectives of each client demonstrates a focus on delivering a personalized and memorable experience for participants.</p>
-      <p>Your end-to-end MICE services cover various aspects of event planning, including travel arrangements, accommodation bookings, conference venues, sightseeing and excursions, gala events and entertainment, activities for companions, and pre and post-tour services. This comprehensive range of services ensures that clients can rely on Alim Tours & Travel for all their MICE-related requirements.</p>
+      <p>MAM Tours & Travel has a dedicated team of MICE (Meetings, Incentive Tours, Conferences, Exhibitions, and Events) professionals who are committed to working closely with clients from the planning stage to the execution of their events. Providing a customized program tailored to the specific aims and objectives of each client demonstrates a focus on delivering a personalized and memorable experience for participants.</p>
+      <p>Your end-to-end MICE services cover various aspects of event planning, including travel arrangements, accommodation bookings, conference venues, sightseeing and excursions, gala events and entertainment, activities for companions, and pre and post-tour services. This comprehensive range of services ensures that clients can rely on MAM Tours & Travel for all their MICE-related requirements.</p>
     <p>The combination of your industry experience, strong relationships with hotels and airlines, and knowledgeable staff positions you to deliver unrivaled service at competitive prices. This makes you an ideal partner for anyone seeking assistance with their MICE events.</p>
     <p>It would be beneficial to provide more information about the types of events you have successfully organized in the past, the destinations you cover, and any unique features or special capabilities your team possesses. Additionally, sharing client testimonials or success stories can help showcase your expertise and track record in the MICE industry.</p>
-    <p>Overall, Alim Tours & Travel appears to be a reliable and capable partner for clients looking to plan and execute successful MICE events.
+    <p>Overall, MAM Tours & Travel appears to be a reliable and capable partner for clients looking to plan and execute successful MICE events.
 </p>
 
     </div>
