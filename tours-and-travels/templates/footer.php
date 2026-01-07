@@ -36,7 +36,7 @@ Awidah street, Malaz,Riyadh - 12836, Kingdom of Saudi Arabia</p>
             <div class="aegis-site-footer__contact-box-items">
                 <h3 class="aegis-site-footer__contact-box-heading"><img src="../logistics/assets/images/contact-box-email-icon.svg" alt="" class="aegis-site-footer__contact-box-icon">E-mail</h3>
                 <p class="aegis-site-footer__contact-box-p">
-                <a href="mailto:reservations@alimarabia.com" class="aegis-site-footer__contact-box-links">reservations@alimarabia.com</a>
+                <a href="mailto:reservations@mam.com.sa" class="aegis-site-footer__contact-box-links">reservations@mam.com.sa</a>
                 </p>
                 
                 </div>
