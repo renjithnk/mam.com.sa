@@ -37,7 +37,7 @@
         </div>
 
 
-  <!--   <div class="g-recaptcha" data-sitekey="6Ld9RLwqAAAAAJdtendBJXvo6WjFoV5GLIIfbScA"></div>  -->
+    
 
         <div class="form__submit-wrapper">
             <button class="form__submit btn1" type="submit" name="btnsend" id="btnsend"
@@ -54,7 +54,17 @@
                 </div>
             </div>
         </div>
+
+        <input type="hidden" name="token" id="recaptcha_token">
         <div class="form-success" id="msgstatus" style="display:none;"></div>
 
     </form>
+
+     <script>
+        grecaptcha.ready(function() {
+        grecaptcha.execute('6LcgQEMsAAAAAGTrpuQS6dPmcXD4clDGnVnoVojG', {action: 'login'}).then(function(token) {
+            document.getElementById('recaptcha_token').value = token;
+        });
+    });
+  </script>
 </div>

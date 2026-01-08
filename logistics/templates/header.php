@@ -43,10 +43,8 @@
     <link rel="canonical" href="<?php echo @$seoSettingsResultRow['canonical_link'];?>">
     <!-- Main CSS -->
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-
-
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcgQEMsAAAAAGTrpuQS6dPmcXD4clDGnVnoVojG"></script>
 
 
     <?php 

@@ -254,7 +254,7 @@
     }
     else
 	{
-        if(($url === "alimarabia.com") || ($url === "www.alimarabia.com"))
+        if(($url === "mam.com.sa") || ($url === "www.mam.com.sa"))
 	    {
   			  /* echo '<script async src="assets/js/aegis.min.js"></script>';*/
 			   $path=$clientPath . "/assets/js/aegis.js";

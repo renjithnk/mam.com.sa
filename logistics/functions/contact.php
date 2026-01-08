@@ -9,14 +9,17 @@ require '../../PHPMailer/src/PHPMailer.php';
 require '../../PHPMailer/src/SMTP.php';
 
 
-/* $secretKey = "6Ld9RLwqAAAAANqn1a49r9nnLv8mmT7xf_Cbzuoz"; // Replace with your secret key
- $captchaResponse = $_POST['g-recaptcha-response'];
+ $secret = "6LcgQEMsAAAAADrXMnRVm3alJHP-4FZiMzFQFsg1"; // Replace with your secret key
+ $token  = $_POST['token'];
+ $action = "login";
+
+ // $captchaResponse = $_POST['g-recaptcha-response'];
 // Verify reCAPTCHA response
  $verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
- $response = file_get_contents($verifyUrl . "?secret=" . $secretKey . "&response=" . $captchaResponse);
+ $response = file_get_contents($verifyUrl . "?secret=" . $secret . "&response=" . $token);
  $responseData = json_decode($response);
- if ($responseData->success) 
- { */
+ if($responseData->success && $responseData->score >= 0.5 && $responseData->action === $action) 
+ { 
 			$name =  $_POST['name'];
 			$name = preg_replace('/[^A-Za-z\s]/', '', $name); 
 			$email =  $_POST['email'];
@@ -133,9 +136,9 @@ require '../../PHPMailer/src/SMTP.php';
 			{
 				echo $msg;
 			}
-/* } 
+} 
 else 
 {
    echo "reCAPTCHA verification failed. Please try again.";
-} */
+} 
 ?>
