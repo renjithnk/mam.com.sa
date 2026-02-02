@@ -36,7 +36,8 @@
             <div class="form__group">
                 <div class="form__col">
                     <div class="form__field-container">
-                        <input class="form__input-text" type="tel" id="phone" name="phone" onkeypress="return isNumberKey(event)">
+                        <input class="form__input-text" type="tel" id="phone" name="phone" required
+                            onkeypress="return isNumberKey(event)">
                     </div>
                 </div>
             </div>
@@ -90,13 +91,12 @@
                 </div>
             </div>
         </div>
-		
 
-  <!--  <div class="g-recaptcha" data-sitekey="6Ld9RLwqAAAAAJdtendBJXvo6WjFoV5GLIIfbScA"></div>  -->
+        <div class="g-recaptcha" data-sitekey="6Lc74lIsAAAAAGehDtc9u4j_rOKRn8ERT9jwdZiQ"></div>
 
         <div class="form__submit-wrapper">
             <button class="form__submit btn1" type="submit" name="btnsend" id="btnsend"
-                onclick="submitMovingtouk();">Submit</button>
+                onclick="return submitMovingtouk();">Submit</button>
         </div>
 
         <div class="form-validation" id="errmsg"></div>

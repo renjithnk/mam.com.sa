@@ -2773,5 +2773,23 @@
 
 
 .flatpickr-calendar {
-    display: none;
+    // display: none;
+}
+
+
+.date-field {
+    position: relative;
+}
+
+.date-field input {
+    padding-right: 40px;
+}
+
+.date-field .date-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
 }

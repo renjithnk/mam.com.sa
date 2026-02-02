@@ -1,19 +1,19 @@
 <?php
-	require_once 'includes/database.php'; 
-	include 'includes/config.php'; 
-	$db = new Database();
-    // URL Detection for Delivering Minified CSS & JS Assets
-    $url =  $_SERVER['SERVER_NAME'];
+require_once 'includes/database.php';
+include 'includes/config.php';
+$db = new Database();
+// URL Detection for Delivering Minified CSS & JS Assets
+$url = $_SERVER['SERVER_NAME'];
 ?>
-<?php	
-	$sql = "SELECT * FROM aegis_settings where id=1 and status=0";
-	$aegisSettingsResult = $db->query($sql);
-	$aegisSettingsResultRow = $aegisSettingsResult->fetch_array();
-	
-	$pageName=basename($_SERVER['PHP_SELF']);
-	$sql = "SELECT * FROM seo_settings where page_url='$pageName' and status=0";
-	$seoSettingsResult = $db->query($sql);
-	$seoSettingsResultRow = $seoSettingsResult->fetch_array();
+<?php
+$sql = "SELECT * FROM aegis_settings where id=1 and status=0";
+$aegisSettingsResult = $db->query($sql);
+$aegisSettingsResultRow = $aegisSettingsResult->fetch_array();
+
+$pageName = basename($_SERVER['PHP_SELF']);
+$sql = "SELECT * FROM seo_settings where page_url='$pageName' and status=0";
+$seoSettingsResult = $db->query($sql);
+$seoSettingsResultRow = $seoSettingsResult->fetch_array();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,65 +26,49 @@
     <meta name="author" content="alimarabia">
     <!-- SEO Tags -->
     <meta name="robots" content="index">
-    <meta name="description" content="<?php echo @$seoSettingsResultRow['meta_description'];?>">
-    <meta name="keywords" content="<?php echo @$seoSettingsResultRow['meta_keywords'];?>">
+    <meta name="description" content="<?php echo @$seoSettingsResultRow['meta_description']; ?>">
+    <meta name="keywords" content="<?php echo @$seoSettingsResultRow['meta_keywords']; ?>">
     <!-- OG Tags -->
-    <meta property="og:title" content="<?php echo @$seoSettingsResultRow['og_title'];?>">
-    <meta property="og:url" content="<?php echo @$seoSettingsResultRow['og_url'];?>">
-    <meta property="og:type" content="<?php echo @$seoSettingsResultRow['og_type'];?>">
-    <meta property="og:description" content="<?php echo @$seoSettingsResultRow['og_description'];?>">
-    <meta property="og:image" content="<?php echo @$seoSettingsResultRow['og_image'];?>">
+    <meta property="og:title" content="<?php echo @$seoSettingsResultRow['og_title']; ?>">
+    <meta property="og:url" content="<?php echo @$seoSettingsResultRow['og_url']; ?>">
+    <meta property="og:type" content="<?php echo @$seoSettingsResultRow['og_type']; ?>">
+    <meta property="og:description" content="<?php echo @$seoSettingsResultRow['og_description']; ?>">
+    <meta property="og:image" content="<?php echo @$seoSettingsResultRow['og_image']; ?>">
     <!-- Webpage Title -->
-    <title><?php echo @$seoSettingsResultRow['page_title'];?></title>
-    <link rel="canonical" href="<?php echo @$seoSettingsResultRow['canonical_link'];?>">
-    <!-- Main CSS -->
-    <?php 
-    if($url === "localhost.alim"){
-    echo '<link href="assets/css/aegis.css" type="text/css" rel="stylesheet" >';
-    }
-	else if($url === "localhost"){
-    echo '<link href="assets/css/aegis.css" type="text/css" rel="stylesheet" >';
-    }
-	else 
-	{
-		if(($url === "alimarabia.com") || ($url === "www.alimarabia.com"))
-		{
-   				 echo '<link href="assets/css/aegis.min.css" type="text/css" rel="stylesheet" >';
-		}
-    }
-    ?>
+    <title><?php echo @$seoSettingsResultRow['page_title']; ?></title>
+    <link rel="canonical" href="<?php echo @$seoSettingsResultRow['canonical_link']; ?>">
+    <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TDGSW8Q3');
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TDGSW8Q3');
     </script><!-- End Google Tag Manager -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11377362875"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-    gtag('config', 'AW-11377362875');
+        gtag('config', 'AW-11377362875');
     </script>
-
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -97,9 +81,9 @@
             <div class="aegis-site-header__logo">
                 <a href="index.php" class="aegis-site-header__logo-link">
                     <?php
-			   $logoImgPath=$clientPath . "/admin/uploads/aegissettings/" . $aegisSettingsResultRow['logo'];
-			?>
-                    <img src="<?php echo $logoImgPath; ?>" alt="<?php echo $aegisSettingsResultRow['logo_alt'];?>"
+                    $logoImgPath = $clientPath . "/admin/uploads/aegissettings/" . $aegisSettingsResultRow['logo'];
+                    ?>
+                    <img src="<?php echo $logoImgPath; ?>" alt="<?php echo $aegisSettingsResultRow['logo_alt']; ?>"
                         class="site-header__logo-img" width="256" height="60" loading="lazy"></a>
 
             </div>
@@ -110,65 +94,76 @@
                 <div class="main-nav__content">
                     <ul class="main-nav__ul">
                         <li class="main-nav__item">
-                            <a href="<?php echo $clientPath . '/index.php';?>" class="main-nav__link">Home</a>
+                            <a href="<?php echo $clientPath . '/index.php'; ?>" class="main-nav__link">Home</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="<?php echo $clientPath . '/about-us.php';?>" class="main-nav__link">About</a>
+                            <a href="<?php echo $clientPath . '/about-us.php'; ?>" class="main-nav__link">About</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link submenu-trigger">Services</a>
                             <ul class="main-nav__submenu-content">
 
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/moving-and-relocation.php';?>"
+                                    <a href="<?php echo $clientPath . '/moving-and-relocation.php'; ?>"
                                         class="main-nav__link submenu-trigger mobile-trigger">Moving & Relocation</a>
-
+                                    <ul class="main-nav__submenu-content">
+                                        <li class="main-nav__item">
+                                            <a href="movers-in-al-bustan.php" class="main-nav__link">Movers in
+                                                Al-Bustan</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="movers-in-jeddah.php" class="main-nav__link">Movers in Jeddah</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a href="movers-in-khobar.php" class="main-nav__link">Movers in Khobar</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/warehousing.php';?>"
+                                    <a href="<?php echo $clientPath . '/warehousing.php'; ?>"
                                         class="main-nav__link">Warehousing</a>
                                 </li>
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/logistics.php';?>"
+                                    <a href="<?php echo $clientPath . '/logistics.php'; ?>"
                                         class="main-nav__link submenu-trigger">Logistics</a>
                                 </li>
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/customs-clearance.php';?>"
+                                    <a href="<?php echo $clientPath . '/customs-clearance.php'; ?>"
                                         class="main-nav__link submenu-trigger">Customs Clearance</a>
                                 </li>
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/office-and-industrial-moving.php';?>"
+                                    <a href="<?php echo $clientPath . '/office-and-industrial-moving.php'; ?>"
                                         class="main-nav__link submenu-trigger">Office & Industrial
                                         Moving</a>
                                 </li>
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/furniture-fixtures-and-equipments-moving.php';?>"
+                                    <a href="<?php echo $clientPath . '/furniture-fixtures-and-equipments-moving.php'; ?>"
                                         class="main-nav__link submenu-trigger">Furniture,
                                         Fixtures & Equipments</a>
                                 </li>
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/sea-freight.php';?>"
+                                    <a href="<?php echo $clientPath . '/sea-freight.php'; ?>"
                                         class="main-nav__link submenu-trigger">Sea Freight</a>
                                 </li>
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/air-freight.php';?>"
+                                    <a href="<?php echo $clientPath . '/air-freight.php'; ?>"
                                         class="main-nav__link submenu-trigger">Air Freight</a>
                                 </li>
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/gcc-transport.php';?>"
+                                    <a href="<?php echo $clientPath . '/gcc-transport.php'; ?>"
                                         class="main-nav__link submenu-trigger">GCC Transport</a>
                                 </li>
                                 <li class="main-nav__item">
-                                    <a href="<?php echo $clientPath . '/pet-relocation.php';?>"
+                                    <a href="<?php echo $clientPath . '/pet-relocation.php'; ?>"
                                         class="main-nav__link submenu-trigger">Pet Relocation</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="main-nav__item">
-                            <a href="<?php echo $clientPath . '/gallery.php';?>" class="main-nav__link">Gallery</a>
+                            <a href="<?php echo $clientPath . '/gallery.php'; ?>" class="main-nav__link">Gallery</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="<?php echo $clientPath . '/contact-us.php';?>" class="main-nav__link">Contact</a>
+                            <a href="<?php echo $clientPath . '/contact-us.php'; ?>" class="main-nav__link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -189,21 +184,21 @@
             </div>
             <div class="social-media">
                 <div class="social-media__link-block">
-                    <a href="<?php echo $aegisSettingsResultRow['insta_link'];?>" target="_blank"
+                    <a href="<?php echo $aegisSettingsResultRow['insta_link']; ?>" target="_blank"
                         class="social-media__link">
                         <img src="<?php echo $clientPath . "/assets/images/instagram-logo.svg"; ?>" alt="instagram-logo"
                             class="social-media__link-img" loading="lazy">
                         <img src="<?php echo $clientPath . "/assets/images/instagram-logo-white.svg"; ?>"
                             alt="instagram-logo-white" class="social-media__link-img-white" loading="lazy">
                     </a>
-                    <a href="<?php echo $aegisSettingsResultRow['fb_link'];?>" target="_blank"
+                    <a href="<?php echo $aegisSettingsResultRow['fb_link']; ?>" target="_blank"
                         class="social-media__link">
                         <img src="<?php echo $clientPath . "/assets/images/facebook-logo.svg"; ?>" alt="facebook-logo"
                             class="social-media__link-img" loading="lazy">
                         <img src="<?php echo $clientPath . "/assets/images/facebook-logo-white.svg"; ?>"
                             alt="facebook-logo-white" class="social-media__link-img-white" loading="lazy">
                     </a>
-                    <a href="<?php echo $aegisSettingsResultRow['linkedin_link'];?>" target="_blank"
+                    <a href="<?php echo $aegisSettingsResultRow['linkedin_link']; ?>" target="_blank"
                         class="social-media__link">
                         <img src="<?php echo $clientPath . "/assets/images/linkedin-logo.svg"; ?>" alt="linked-in-logo"
                             class="social-media__link-img" loading="lazy">

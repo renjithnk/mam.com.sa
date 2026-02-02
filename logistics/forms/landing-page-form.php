@@ -19,8 +19,8 @@
             <div class="form__group">
                 <div class="form__col">
                     <div class="form__field-container">
-                        <input type="text" class="form__input-text" placeholder="Phone" required id="phoneno"
-                            onkeypress="return isNumberKey(event)" name="phoneno" maxlength="20">
+                        <input type="text" class="form__input-text" placeholder="Phone" required id="phone"
+                            onkeypress="return isNumberKey(event)" name="phone" maxlength="20">
                         <div class="form__validation">Validation</div>
                     </div>
                 </div>
@@ -70,17 +70,20 @@
                 <div class="form__col">
                     <div class="form__field-container">
                         <label for="name" class="form__label">Preffered Moving Date:</label>
-                        <input type="date" class="form__input-text" name="estimated_date" id="estimated_date">
+                        <div class="date-field">
+                            <input class="form__input-text" type="text" id="estimated_date" name="estimated_date"
+                                placeholder="MM/DD/YYYY">
+                            <i class="fa fa-calendar date-icon"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-<!--    <div class="g-recaptcha" data-sitekey="6Ld9RLwqAAAAAJdtendBJXvo6WjFoV5GLIIfbScA"></div>   -->
-
+        <div class="g-recaptcha" data-sitekey="6Lc74lIsAAAAAGehDtc9u4j_rOKRn8ERT9jwdZiQ"></div>
         <div class="form__submit-wrapper">
             <button class="form__submit btn1" type="submit" name="btnsend" id="btnsend"
-                onclick="submitRequest();">Submit</button>
+                onclick="return submitRequest();">Submit</button>
         </div>
 
         <div class="form-validation" id="errmsg"></div>

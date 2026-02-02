@@ -116,7 +116,7 @@
       <h2 class="alim-discount__caption-text">Discounted Rates on Hotels</h2>
     </div>
     <div class="alim-discount__description-box">
-      <p class="alim-discount__description-text">ALIM  providing  you discounted rates on hotels worldwide  and we offer competative  prices for booking accommodations in various destinations around the world.</p>
+      <p class="alim-discount__description-text">MAM providing  you discounted rates on hotels worldwide  and we offer competative  prices for booking accommodations in various destinations around the world.</p>
       <a href="hotels.php" class="btn1">More</a>
     </div>
   </div>

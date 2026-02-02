@@ -504,7 +504,7 @@
             </p>
             <p class="aegis-question__or">or fill the following form with your queries
                 and we'll get back to you</p>
-            <?php include('forms/enquiry-form.php') ?>
+            <?php include('forms/index-form.php') ?>
         </div>
     </div>
 

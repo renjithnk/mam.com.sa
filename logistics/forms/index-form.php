@@ -32,8 +32,8 @@
                 pattern="[A-Za-z\s]+" oninput="validateInput(this)"></textarea>
         </div>
     </div>
-	
-<!--	<div class="g-recaptcha" data-sitekey="6Ld9RLwqAAAAAJdtendBJXvo6WjFoV5GLIIfbScA"></div>  -->
+
+    <div class="g-recaptcha" data-sitekey="6Lc74lIsAAAAAGehDtc9u4j_rOKRn8ERT9jwdZiQ"></div>
 
     <div class="form__submit-wrapper">
         <button class="form__submit btn1" type="submit" name="btnsend" id="btnsend"

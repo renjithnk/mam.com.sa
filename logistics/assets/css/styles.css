@@ -6845,8 +6845,21 @@ body.lb-disable-scrolling {
   }
 }
 /* Telephone Field with Country Flag: End */
-.flatpickr-calendar {
-  display: none;
+.date-field {
+  position: relative;
+}
+
+.date-field input {
+  padding-right: 40px;
+}
+
+.date-field .date-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,23 +1,20 @@
 <?php
-
-?>
-<?php
-	require_once 'includes/database.php'; 
-	include 'includes/config.php'; 
-	$db = new Database();
-    // URL Detection for Delivering Minified CSS & JS Assets
-    $url =  $_SERVER['SERVER_NAME'];
+require_once 'includes/database.php';
+include 'includes/config.php';
+$db = new Database();
+// URL Detection for Delivering Minified CSS & JS Assets
+$url = $_SERVER['SERVER_NAME'];
 //	echo $url;
 ?>
-<?php	
-	$sql = "SELECT * FROM aegis_settings where id=1 and status=0";
-	$aegisSettingsResult = $db->query($sql);
-	$aegisSettingsResultRow = $aegisSettingsResult->fetch_array();
-	
-	$pageName=basename($_SERVER['PHP_SELF']);
-	$sql = "SELECT * FROM seo_settings where page_url='$pageName' and status=0";
-	$seoSettingsResult = $db->query($sql);
-	$seoSettingsResultRow = $seoSettingsResult->fetch_array();
+<?php
+$sql = "SELECT * FROM aegis_settings where id=1 and status=0";
+$aegisSettingsResult = $db->query($sql);
+$aegisSettingsResultRow = $aegisSettingsResult->fetch_array();
+
+$pageName = basename($_SERVER['PHP_SELF']);
+$sql = "SELECT * FROM seo_settings where page_url='$pageName' and status=0";
+$seoSettingsResult = $db->query($sql);
+$seoSettingsResultRow = $seoSettingsResult->fetch_array();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,38 +27,22 @@
     <meta name="author" content="mam.com.sa">
     <!-- SEO Tags -->
     <meta name="robots" content="index">
-    <meta name="description" content="<?php echo @$seoSettingsResultRow['meta_description'];?>">
-    <meta name="keywords" content="<?php echo @$seoSettingsResultRow['meta_keywords'];?>">
+    <meta name="description" content="<?php echo @$seoSettingsResultRow['meta_description']; ?>">
+    <meta name="keywords" content="<?php echo @$seoSettingsResultRow['meta_keywords']; ?>">
     <!-- OG Tags -->
-    <meta property="og:title" content="<?php echo @$seoSettingsResultRow['og_title'];?>">
-    <meta property="og:url" content="<?php echo @$seoSettingsResultRow['og_url'];?>">
-    <meta property="og:type" content="<?php echo @$seoSettingsResultRow['og_type'];?>">
-    <meta property="og:description" content="<?php echo @$seoSettingsResultRow['og_description'];?>">
-    <meta property="og:image" content="<?php echo @$seoSettingsResultRow['og_image'];?>">
+    <meta property="og:title" content="<?php echo @$seoSettingsResultRow['og_title']; ?>">
+    <meta property="og:url" content="<?php echo @$seoSettingsResultRow['og_url']; ?>">
+    <meta property="og:type" content="<?php echo @$seoSettingsResultRow['og_type']; ?>">
+    <meta property="og:description" content="<?php echo @$seoSettingsResultRow['og_description']; ?>">
+    <meta property="og:image" content="<?php echo @$seoSettingsResultRow['og_image']; ?>">
     <!-- Webpage Title -->
-    <title><?php echo @$seoSettingsResultRow['page_title'];?></title>
-    <link rel="canonical" href="<?php echo @$seoSettingsResultRow['canonical_link'];?>">
+    <title><?php echo @$seoSettingsResultRow['page_title']; ?></title>
+    <link rel="canonical" href="<?php echo @$seoSettingsResultRow['canonical_link']; ?>">
     <!-- Main CSS -->
 
-
+    <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://www.google.com/recaptcha/api.js?render=6LcgQEMsAAAAAGTrpuQS6dPmcXD4clDGnVnoVojG"></script>
-
-
-    <?php 
-    if($url === "localhost.mam.com.sa"){
-    echo '<link href="assets/css/styles.css" type="text/css" rel="stylesheet" >';
-    }
-	else if($url === "localhost"){
-    echo '<link href="assets/css/styles.css" type="text/css" rel="stylesheet" >';
-    }
-    else 
-	{
-		if(($url === "mam.com.sa") || ($url === "www.mam.com.sa"))
-		{
-			echo '<link href="assets/css/styles.min.css" type="text/css" rel="stylesheet" >';
-		}
-	}
-    ?>
     <!-- Google Tag Manager -->
     <!-- <script>
     (function(w, d, s, l, i) {
@@ -91,7 +72,7 @@
 
     gtag('config', 'AW-11377362875');
     </script> -->
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -104,9 +85,9 @@
             <div class="aegis-site-header__logo">
                 <a href="index.php" class="aegis-site-header__logo-link">
                     <?php
-			   $logoImgPath=$clientPath . "/admin/uploads/aegissettings/" . $aegisSettingsResultRow['logo'];
-			?>
-                    <img src="<?php echo $logoImgPath; ?>" alt="<?php echo $aegisSettingsResultRow['logo_alt'];?>"
+                    $logoImgPath = $clientPath . "/admin/uploads/aegissettings/" . $aegisSettingsResultRow['logo'];
+                    ?>
+                    <img src="<?php echo $logoImgPath; ?>" alt="<?php echo $aegisSettingsResultRow['logo_alt']; ?>"
                         class="site-header__logo-img" width="256" height="60" loading="lazy"></a>
 
             </div>
@@ -128,11 +109,11 @@
 
 
                                 <?php
-					   $servicesMenuSql="select * from service where status = 0";
-					   $servicesMenuResult = $db->query($servicesMenuSql);
-					  /* while(@$servicesMenuRow = $servicesMenuResult->fetch_array()) 
-					   {*/
-					?>
+                                $servicesMenuSql = "select * from service where status = 0";
+                                $servicesMenuResult = $db->query($servicesMenuSql);
+                                /* while(@$servicesMenuRow = $servicesMenuResult->fetch_array()) 
+                                 {*/
+                                ?>
 
                                 <li class="main-nav__item">
                                     <a href="moving-and-relocation.php"
@@ -193,8 +174,8 @@
                                         Arabia</a>
                                 </li>
                                 <?php
-				//	}
-					?>
+                                //	}
+                                ?>
                             </ul>
                         </li>
                         <li class="main-nav__item">
@@ -227,21 +208,21 @@
             </div>
             <div class="social-media">
                 <div class="social-media__link-block">
-                    <a href="<?php echo $aegisSettingsResultRow['insta_link'];?>" target="_blank"
+                    <a href="<?php echo $aegisSettingsResultRow['insta_link']; ?>" target="_blank"
                         class="social-media__link">
                         <img src="../logistics/assets/images/instagram-logo.svg" alt="instagram-logo"
                             class="social-media__link-img" loading="lazy">
                         <img src="../logistics/assets/images/instagram-logo-white.svg" alt="instagram-logo-white"
                             class="social-media__link-img-white" loading="lazy">
                     </a>
-                    <a href="<?php echo $aegisSettingsResultRow['fb_link'];?>" target="_blank"
+                    <a href="<?php echo $aegisSettingsResultRow['fb_link']; ?>" target="_blank"
                         class="social-media__link">
                         <img src="../logistics/assets/images/facebook-logo.svg" alt="facebook-logo"
                             class="social-media__link-img" loading="lazy">
                         <img src="../logistics/assets/images/facebook-logo-white.svg" alt="facebook-logo-white"
                             class="social-media__link-img-white" loading="lazy">
                     </a>
-                    <a href="<?php echo $aegisSettingsResultRow['linkedin_link'];?>" target="_blank"
+                    <a href="<?php echo $aegisSettingsResultRow['linkedin_link']; ?>" target="_blank"
                         class="social-media__link">
                         <img src="../logistics/assets/images/linkedin-logo.svg" alt="linked-in-logo"
                             class="social-media__link-img" loading="lazy">

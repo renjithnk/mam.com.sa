@@ -3846,6 +3846,10 @@ body.lb-disable-scrolling {
     margin-right: auto;
   }
 }
+.g-recaptcha {
+  margin-bottom: 10px;
+}
+
 /* Site Footer: End */
 
 /*# sourceMappingURL=styles.css.map */
