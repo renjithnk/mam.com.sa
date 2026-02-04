@@ -1,5 +1,5 @@
-@import '../abstracts/mixins';
-@import '../abstracts/variables';
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
 
 .btn1 {
     background: $brand-color1;
@@ -32,8 +32,7 @@
         background: $brand-color2;
     }
 
-    @include md() {
-
+    @include md-min {
         &::after {
             width: 0.75rem;
             height: 0.75rem;
@@ -72,7 +71,7 @@
         background: $brand-color1;
     }
 
-    @include md() {
+    @include md-min {
 
         &::after {
             width: 0.75rem;
@@ -208,7 +207,7 @@
         background: white;
     }
 
-    @include md() {
+    @include md-min {
 
         &::after {
             width: 0.75rem;

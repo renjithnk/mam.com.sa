@@ -16,7 +16,8 @@
         <div class="contact-us-page-contact-box">
           <div class="contact-us-page-contact-box__items">
             <h4 class="contact-us-page-contact-box__heading">Address</h4>
-            <div class="contact-us-page-contact-box__content">Awidah street, Malaz, Riyadh - 12836, Kingdom of Saudi
+            <div class="contact-us-page-contact-box__content">MAM Tours & Travels<br>Awidah street, Malaz, Riyadh -
+              12836, Kingdom of Saudi
               Arabia
             </div>
           </div>

@@ -2,6 +2,7 @@
   padding-bottom: 0 !important;
 }
 
+/* --------------------------- Media Queries: Start --------------------------- */
 *,
 *:hover,
 *:focus {
@@ -386,13 +387,13 @@ table {
   background-color: #fff;
 }
 table th {
-  border: 1px solid #cdcdcd;
+  border: 1px solid #dedede;
   padding: 0.5rem;
   font-size: 0.85rem;
   background: #f7f7f7;
 }
 table tr td {
-  border: 1px solid #cdcdcd;
+  border: 1px solid #dedede;
   padding: 0.2rem 0.75rem;
   margin: 0;
   font-size: 0.9rem;
@@ -551,12 +552,7 @@ aside article:last-of-type {
   padding-right: 1rem;
 }
 .admin-header__logo {
-  width: 7rem;
-}
-@media only screen and (min-width: 992px) {
-  .admin-header__logo {
-    width: 12rem;
-  }
+  width: 110px;
 }
 .admin-header__navigation {
   font-size: 0.8rem;
@@ -568,11 +564,35 @@ aside article:last-of-type {
   top: 5rem;
   background: white;
 }
+@media only screen and (min-width: 768px) {
+  .admin-header__navigation {
+    position: static;
+    border: none;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .admin-header__navigation-trigger {
+    display: none;
+  }
+}
 .admin-header__navigation-content {
   display: none;
 }
+@media only screen and (min-width: 768px) {
+  .admin-header__navigation-content {
+    display: block;
+  }
+}
 .admin-header__navigation-content--show {
   display: block;
+}
+@media only screen and (min-width: 768px) {
+  .admin-header__navigation-ul {
+    display: flex;
+    column-gap: 1rem;
+  }
 }
 .admin-header__logout {
   cursor: pointer;
@@ -585,12 +605,23 @@ aside article:last-of-type {
   top: 5.35rem;
   background: white;
 }
+@media only screen and (min-width: 768px) {
+  .admin-header__logout {
+    position: static;
+  }
+}
 .admin-header__user-details {
   width: 2.5rem;
   height: 2.5rem;
   position: absolute;
   right: 1rem;
   top: 5rem;
+}
+@media only screen and (min-width: 768px) {
+  .admin-header__user-details {
+    position: static;
+    margin-left: 1rem;
+  }
 }
 .admin-header__user-details-img {
   border-radius: 100%;
@@ -599,43 +630,6 @@ aside article:last-of-type {
   object-fit: cover;
 }
 
-.admin-sidebar__trigger {
-  font-size: 0.7rem;
-  border: 1px solid #cdcdcd;
-  padding: 0.35rem;
-  border-radius: 0.5rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .admin-sidebar__trigger {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .admin-header__navigation {
-    position: static;
-    border: none;
-    margin-left: auto;
-    margin-right: 1rem;
-  }
-  .admin-header__navigation-trigger {
-    display: none;
-  }
-  .admin-header__navigation-content {
-    display: block;
-  }
-  .admin-header__navigation-ul {
-    display: flex;
-    column-gap: 1rem;
-  }
-  .admin-header__user-details {
-    position: static;
-    margin-left: 1rem;
-  }
-  .admin-header__logout {
-    position: static;
-  }
-}
 .admin-sidebar {
   position: absolute;
   top: 0;
@@ -647,6 +641,25 @@ aside article:last-of-type {
   left: -100%;
   transition: all 0.35s ease-in-out 0s;
   padding: 1.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .admin-sidebar {
+    position: static;
+    border: 1px solid #cdcdcd;
+    border-radius: 0.5rem;
+    background-color: white;
+  }
+}
+.admin-sidebar__trigger {
+  font-size: 0.7rem;
+  border: 1px solid #cdcdcd;
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .admin-sidebar__trigger {
+    display: none;
+  }
 }
 .admin-sidebar__navigation-heading {
   background: #f5f5f5;
@@ -675,24 +688,14 @@ aside article:last-of-type {
   height: 1rem;
   font-size: 0.8rem;
 }
-
 .admin-sidebar--active {
   left: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .admin-sidebar {
-    position: static;
-    border: 1px solid #cdcdcd;
-    border-radius: 0.5rem;
-    background-color: white;
-  }
-}
 .admin-content {
   height: 100%;
   padding-top: 4rem;
 }
-
 @media only screen and (min-width: 768px) {
   .admin-content {
     display: grid;
@@ -710,12 +713,19 @@ aside article:last-of-type {
     grid-template-columns: 17rem 1fr;
   }
 }
+
 .admin-main-section {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
   grid-auto-rows: max-content;
+}
+@media only screen and (min-width: 768px) {
+  .admin-main-section {
+    margin-top: 1rem;
+    padding-right: 0;
+  }
 }
 .admin-main-section__content {
   background: #fff;
@@ -740,12 +750,6 @@ aside article:last-of-type {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 768px) {
-  .admin-main-section {
-    margin-top: 1rem;
-    padding-right: 0;
-  }
-}
 .admin-footer {
   background: white;
   padding-top: 1rem;
@@ -762,6 +766,11 @@ aside article:last-of-type {
   display: grid;
   grid-gap: 1rem;
 }
+@media only screen and (min-width: 768px) {
+  .dashboard__contents {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .dashboard__contents-items {
   background: #f5f5f5;
   justify-content: flex-start;
@@ -771,19 +780,7 @@ aside article:last-of-type {
   padding-left: 1.5rem;
   column-gap: 1rem;
 }
-.dashboard__contents-icon-img {
-  height: 2rem;
-}
-.dashboard__contents-items-label {
-  font-weight: 400;
-  font-size: 1rem;
-  margin-bottom: 0;
-}
-
 @media only screen and (min-width: 768px) {
-  .dashboard__contents {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .dashboard__contents-items {
     height: 13rem;
     display: flex;
@@ -792,13 +789,26 @@ aside article:last-of-type {
     align-items: center;
     gap: 0.5rem;
   }
-  .dashboard__contents-items-label {
-    font-size: 1.25rem;
-  }
+}
+.dashboard__contents-icon-img {
+  height: 2rem;
+}
+@media only screen and (min-width: 768px) {
   .dashboard__contents-icon-img {
     height: 2.5rem;
   }
 }
+.dashboard__contents-items-label {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .dashboard__contents-items-label {
+    font-size: 1.25rem;
+  }
+}
+
 .form-success {
   padding: 1rem;
   border: 1px solid yellowgreen;
@@ -812,40 +822,115 @@ aside article:last-of-type {
   max-width: 20rem;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid red;
 }
 
 .admin-login__logo-container {
   text-align: center;
+  border: 2px solid red;
 }
-
-table tr td:nth-child(1) {
-  width: 300px;
-  white-space: break-spaces;
-}
-
-table tr td:nth-child(2) {
+.admin-login__logo-container img {
   width: 200px;
-  white-space: break-spaces;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-table tr td:nth-child(3) {
-  width: 200px;
-  white-space: break-spaces;
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
 }
 
-table tr td:nth-child(4) {
-  width: 200px;
-  white-space: break-spaces;
+.enquiries-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.enquiries-table th {
+  font-size: 11px;
+}
+.enquiries-table th:nth-child(1) {
+  width: 15%;
+}
+.enquiries-table th:nth-child(2) {
+  width: 20%;
+}
+.enquiries-table th:nth-child(3) {
+  width: 12%;
+}
+.enquiries-table th:nth-child(4) {
+  width: 12%;
+}
+.enquiries-table th:nth-child(5) {
+  width: 30%;
+}
+.enquiries-table th:nth-child(6) {
+  width: 11%;
+}
+.enquiries-table td {
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  font-size: 12px;
+}
+.enquiries-table td.message {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-table tr td:nth-child(5) {
-  width: 200px;
-  white-space: break-spaces;
+.quotations-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
-
-table tr td:nth-child(6) {
-  width: 100px;
-  white-space: break-spaces;
+.quotations-table th {
+  font-size: 11px;
+}
+.quotations-table th:nth-child(1) {
+  width: 10%;
+}
+.quotations-table th:nth-child(2) {
+  width: 15%;
+}
+.quotations-table th:nth-child(3) {
+  width: 10%;
+}
+.quotations-table th:nth-child(4) {
+  width: 12%;
+}
+.quotations-table th:nth-child(5) {
+  width: 12%;
+}
+.quotations-table th:nth-child(6) {
+  width: 12%;
+}
+.quotations-table th:nth-child(7) {
+  width: 12%;
+}
+.quotations-table th:nth-child(8) {
+  width: 8%;
+}
+.quotations-table th:nth-child(9) {
+  width: 10%;
+}
+.quotations-table th:nth-child(10) {
+  width: 10%;
+}
+.quotations-table th:nth-child(11) {
+  width: 9%;
+}
+.quotations-table td {
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  font-size: 12px;
+}
+.quotations-table td.ellipsis {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=admin-style.css.map */

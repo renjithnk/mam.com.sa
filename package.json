@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bs": "browser-sync start --proxy \"localhost.mam.com.sa\" --files \"**/*.php, **/*.css, **/*.js\" --no-notify",
-    "sass": "sass --watch assets/sass:assets/css logistics/assets/sass:logistics/assets/css tours-and-travels/assets/sass:tours-and-travels/assets/css main-index/assets/sass:main-index/assets/css",
+    "sass": "sass --watch assets/sass:assets/css logistics/assets/sass:logistics/assets/css tours-and-travels/assets/sass:tours-and-travels/assets/css main-index/assets/sass:main-index/assets/css logistics/admin/assets/scss:logistics/admin/assets/css",
     "dev": "concurrently \"npm run sass\" \"npm run bs\" --kill-others-on-fail"
   },
   "repository": {

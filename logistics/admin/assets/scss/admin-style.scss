@@ -1,29 +1,29 @@
 // Abstracts
-@import '../scss/abstracts/functions';
-@import '../scss/abstracts/helpers';
-@import '../scss/abstracts/mixins';
-@import '../scss/abstracts/variables';
+@use '../scss/abstracts/functions' as *;
+@use '../scss/abstracts/helpers' as *;
+@use '../scss/abstracts/mixins' as *;
+@use '../scss/abstracts/variables' as *;
 
 // Base
-@import '../scss/base/reset';
-@import '../scss/base/typography';
+@use '../scss/base/reset' as *;
+@use '../scss/base/typography' as *;
 
 // Components
-@import '../scss/components/accordion';
-@import '../scss/components/buttons';
-@import '../scss/components/carousels';
-@import '../scss/components/tabs';
-@import '../scss/components/tables';
+@use '../scss/components/accordion' as *;
+@use '../scss/components/buttons' as *;
+@use '../scss/components/carousels' as *;
+@use '../scss/components/tabs' as *;
+@use '../scss/components/tables' as *;
 
 // Layouts
-@import '../scss/layouts/containers';
-@import '../scss/layouts/footer';
-@import '../scss/layouts/forms';
-@import '../scss/layouts/header';
-@import '../scss/layouts/navigation';
+@use '../scss/layouts/containers' as *;
+@use '../scss/layouts/footer' as *;
+@use '../scss/layouts/forms' as *;
+@use '../scss/layouts/header' as *;
+@use '../scss/layouts/navigation' as *;
 
 // Vendors
-@import '../scss/vendors/swiper';
+@use '../scss/vendors/swiper' as *;
 
 // Admin Header: Start
 .admin-header {
@@ -41,11 +41,11 @@
     }
 
     &__logo {
-        width: 7rem;
+        width: 110px;
 
-        @include lg() {
-            width: 12rem;
-        }
+        // @include lg-min {
+        //     width: 12rem;
+        // }
     }
 
     &__navigation {
@@ -57,19 +57,39 @@
         left: 1rem;
         top: 5rem;
         background: white;
+
+        @include md-min {
+            position: static;
+            border: none;
+            margin-left: auto;
+            margin-right: 1rem;
+        }
     }
 
-    &__navigation-trigger {}
+    &__navigation-trigger {
+        @include md-min {
+            display: none;
+        }
+    }
 
     &__navigation-content {
         display: none;
+
+        @include md-min {
+            display: block;
+        }
     }
 
     &__navigation-content--show {
         display: block;
     }
 
-    &__navigation-ul {}
+    &__navigation-ul {
+        @include md-min {
+            display: flex;
+            column-gap: 1rem;
+        }
+    }
 
     &__navigation-li {}
 
@@ -85,6 +105,10 @@
         right: 4rem;
         top: 5.35rem;
         background: white;
+
+        @include md-min {
+            position: static;
+        }
     }
 
     &__user-details {
@@ -93,6 +117,11 @@
         position: absolute;
         right: 1rem;
         top: 5rem;
+
+        @include md-min {
+            position: static;
+            margin-left: 1rem;
+        }
     }
 
     &__user-details-img {
@@ -103,134 +132,6 @@
     }
 
 }
-
-.admin-sidebar__trigger {
-    font-size: .7rem;
-    border: 1px solid #cdcdcd;
-    padding: 0.35rem;
-    border-radius: 0.5rem;
-}
-
-@media only screen and (min-width:768px) {
-    .admin-sidebar__trigger {
-        display: none;
-    }
-}
-
-@media only screen and (min-width:576px) {
-    .admin-header {
-        &__container {}
-
-        &__logo {}
-
-        &__navigation {}
-
-        &__navigation-trigger {}
-
-        &__navigation-content {}
-
-        &__navigation-ul {}
-
-        &__navigation-li {}
-
-        &__navigation-link {}
-
-        &__user-details {}
-    }
-}
-
-@media only screen and (min-width:768px) {
-    .admin-header {
-        &__container {}
-
-        &__logo {}
-
-        &__navigation {
-            position: static;
-            border: none;
-            margin-left: auto;
-            margin-right: 1rem;
-        }
-
-        &__navigation-trigger {
-            display: none;
-        }
-
-        &__navigation-content {
-            display: block;
-        }
-
-        &__navigation-ul {
-            display: flex;
-            column-gap: 1rem;
-        }
-
-        &__navigation-li {}
-
-        &__navigation-link {}
-
-        &__user-details {
-            position: static;
-            // margin-left: auto;
-            margin-left: 1rem;
-        }
-
-        &__logout {
-            position: static;
-        }
-    }
-}
-
-@media only screen and (min-width:992px) {
-    .admin-header {
-        &__container {}
-
-        &__logo {}
-
-        &__navigation {}
-
-        &__navigation-trigger {}
-
-        &__navigation-content {}
-
-        &__navigation-ul {}
-
-        &__navigation-li {}
-
-        &__navigation-link {}
-    }
-}
-
-@media only screen and (min-width:1200px) {
-    .admin-header {
-        &__container {}
-
-        &__logo {}
-
-        &__navigation {}
-
-        &__navigation-trigger {}
-
-        &__navigation-content {}
-
-        &__navigation-ul {}
-
-        &__navigation-li {}
-
-        &__navigation-link {}
-    }
-}
-
-
-
-
-
-
-
-
-
-// Admin Header: End
-
 
 .admin-sidebar {
     position: absolute;
@@ -243,6 +144,24 @@
     left: -100%;
     transition: all 0.35s ease-in-out 0s;
     padding: 1.5rem;
+
+    @include md-min {
+        position: static;
+        border: 1px solid #cdcdcd;
+        border-radius: 0.5rem;
+        background-color: white;
+    }
+
+    &__trigger {
+        font-size: .7rem;
+        border: 1px solid #cdcdcd;
+        padding: 0.35rem;
+        border-radius: 0.5rem;
+
+        @include md-min {
+            display: none;
+        }
+    }
 
     &__navigation-heading {
         background: #f5f5f5;
@@ -277,31 +196,22 @@
 
     }
 
-}
-
-.admin-sidebar--active {
-    left: 0;
-}
-
-@media only screen and (min-width:768px) {
-    .admin-sidebar {
-        position: static;
-        border: 1px solid #cdcdcd;
-        border-radius: 0.5rem;
-        background-color: white;
+    &--active {
+        left: 0;
     }
+
 }
+
+
+// Admin Header: End
+
+
 
 .admin-content {
     height: 100%;
     padding-top: 4rem;
-    // background: $brand-color2;
-    // border: 2px solid red;
-    // border: 2px solid red;
-}
 
-@media only screen and (min-width:768px) {
-    .admin-content {
+    @include md-min {
         display: grid;
         grid-template-columns: 10rem 1fr;
         padding-left: 1rem;
@@ -309,19 +219,14 @@
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
-}
 
-@media only screen and (min-width:992px) {
-    .admin-content {
+    @include lg-min {
         padding-left: 1rem;
         padding-right: 1rem;
         grid-template-columns: 17rem 1fr;
         // min-height: 90vh;
     }
 }
-
-
-
 
 
 // Admin Main Section: Start
@@ -331,6 +236,11 @@
     display: flex;
     flex-direction: column;
     grid-auto-rows: max-content;
+
+    @include md-min {
+        margin-top: 1rem;
+        padding-right: 0;
+    }
 
     &__content {
         background: #fff;
@@ -355,13 +265,6 @@
 
     &__heading {
         font-weight: 400;
-    }
-}
-
-@media only screen and (min-width:768px) {
-    .admin-main-section {
-        margin-top: 1rem;
-        padding-right: 0;
     }
 }
 
@@ -390,6 +293,10 @@
     &__contents {
         display: grid;
         grid-gap: 1rem;
+
+        @include md-min {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &__contents-items {
@@ -400,33 +307,8 @@
         height: 4rem;
         padding-left: 1.5rem;
         column-gap: 1rem;
-    }
 
-    &__contents-icon {}
-
-    &__contents-icon-img {
-        height: 2rem;
-    }
-
-    &__contents-items-label {
-        font-weight: 400;
-        font-size: 1rem;
-        margin-bottom: 0;
-    }
-}
-
-
-@media only screen and (min-width:576px) {
-    .dashboard {}
-}
-
-@media only screen and (min-width:768px) {
-    .dashboard {
-        &__contents {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        &__contents-items {
+        @include md-min {
             height: 13rem;
             display: flex;
             flex-direction: column;
@@ -434,24 +316,33 @@
             align-items: center;
             gap: 0.5rem;
         }
+    }
 
-        &__contents-items-label {
-            font-size: 1.25rem;
-        }
+    &__contents-icon {}
 
-        &__contents-icon-img {
+    &__contents-icon-img {
+        height: 2rem;
+
+        @include md-min {
             height: 2.5rem;
+        }
+    }
+
+    &__contents-items-label {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 0;
+
+        @include md-min {
+            font-size: 1.25rem;
         }
     }
 }
 
-@media only screen and (min-width:992px) {
-    .dashboard {}
-}
 
-@media only screen and (min-width:1200px) {
-    .dashboard {}
-}
+
+
+
 
 
 // Dashboard: End 
@@ -470,39 +361,158 @@
     max-width: 20rem;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid red;
 }
 
 .admin-login__logo-container {
     text-align: center;
+    border: 2px solid red;
+
+    img {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
+// Table Starts
 
-table tr td:nth-child(1) {
-    width: 300px;
-    white-space: break-spaces;
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
 }
 
-table tr td:nth-child(2) {
-    width: 200px;
-    white-space: break-spaces;
+.enquiries-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    th {
+
+        &:nth-child(1) {
+            width: 15%;
+        }
+
+        &:nth-child(2) {
+            width: 20%;
+        }
+
+        &:nth-child(3) {
+            width: 12%;
+        }
+
+        &:nth-child(4) {
+            width: 12%;
+        }
+
+        &:nth-child(5) {
+            width: 30%;
+        }
+
+        &:nth-child(6) {
+            width: 11%;
+        }
+
+        font-size: 11px;
+    }
+
+    td {
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
+        font-size: 12px;
+
+        &.message {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
 }
 
-table tr td:nth-child(3) {
-    width: 200px;
-    white-space: break-spaces;
+// Quotations Table Starts
+
+.quotations-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    th {
+        &:nth-child(1) {
+            width: 10%;
+        }
+
+        // Name
+        &:nth-child(2) {
+            width: 15%;
+        }
+
+        // Email
+        &:nth-child(3) {
+            width: 10%;
+        }
+
+        // Phone
+        &:nth-child(4) {
+            width: 12%;
+        }
+
+        // From Country
+        &:nth-child(5) {
+            width: 12%;
+        }
+
+        // From City
+        &:nth-child(6) {
+            width: 12%;
+        }
+
+        // To Country
+        &:nth-child(7) {
+            width: 12%;
+        }
+
+        // To City
+        &:nth-child(8) {
+            width: 8%;
+        }
+
+        // Date
+        &:nth-child(9) {
+            width: 10%;
+        }
+
+        // Estimated Date
+        &:nth-child(10) {
+            width: 10%;
+        }
+
+        // Delivery Date
+        &:nth-child(11) {
+            width: 9%;
+        }
+
+        font-size: 11px;
+        // Action
+    }
+
+    td {
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
+        font-size: 12px;
+
+        &.ellipsis {
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
 }
 
-table tr td:nth-child(4) {
-    width: 200px;
-    white-space: break-spaces;
-}
+// Quotations Table Ends
 
-table tr td:nth-child(5) {
-    width: 200px;
-    white-space: break-spaces;
-}
 
-table tr td:nth-child(6) {
-    width: 100px;
-    white-space: break-spaces;
-}
+// Table Ends

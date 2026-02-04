@@ -245,11 +245,11 @@ $seoSettingsResultRow = $seoSettingsResult->fetch_array();
                 <img src="../logistics/assets/images/telecall-icon.svg" alt="floating-button2"
                     class="floating-buttons__icon telecall__icon">
             </a>
-            <a href="https://maps.app.goo.gl/jjEkyxZqYm6gA4HGA" target="_blank"
+            <!-- <a href="https://maps.app.goo.gl/jjEkyxZqYm6gA4HGA" target="_blank"
                 class="floating-buttons__links gmblocation">
                 <img src="../logistics/assets/images/gmblocation-icon.svg" alt="floating-button3"
                     class="floating-buttons__icon gmblocation__icon">
-            </a>
+            </a> -->
         </div>
 
     </header>

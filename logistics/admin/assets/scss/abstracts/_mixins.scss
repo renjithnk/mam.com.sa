@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as *;
 
 // Flex
 @mixin display($value) {
@@ -70,28 +70,34 @@
     transform: rotate(#{$value}deg);
 }
 
-// Media Queries
+/* --------------------------- Media Queries: Start --------------------------- */
 
-@mixin sm() {
+@mixin sm-min {
     @media only screen and (min-width:$sm) {
         @content;
     }
 }
 
-@mixin md() {
+@mixin md-min {
     @media only screen and (min-width:$md) {
         @content;
     }
 }
 
-@mixin lg() {
+@mixin lg-min {
     @media only screen and (min-width:$lg) {
         @content;
     }
 }
 
-@mixin xl() {
+@mixin xl-min {
     @media only screen and (min-width:$xl) {
+        @content;
+    }
+}
+
+@mixin xxl-min {
+    @media only screen and (min-width:#{$xxl}) {
         @content;
     }
 }

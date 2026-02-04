@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 table {
     border: 1px solid red;
     padding: 0;
@@ -6,8 +8,13 @@ table {
     width: 100%;
     background-color: #fff;
 
+    // @include lg-min {
+    //     max-width: 700px;
+    //     overflow-x: hidden;
+    // }
+
     th {
-        border: 1px solid #cdcdcd;
+        border: 1px solid #dedede;
         padding: .5rem;
         font-size: .85rem;
         background: #f7f7f7;
@@ -15,7 +22,7 @@ table {
 
     tr {
         td {
-            border: 1px solid #cdcdcd;
+            border: 1px solid #dedede;
             padding: 0.20rem .75rem;
             margin: 0;
             font-size: .9rem;
