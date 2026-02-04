@@ -6,16 +6,6 @@ $url = $_SERVER['SERVER_NAME'];
 <html lang="en" class='ty-html-tag'>
 
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-TDGSW8Q3');</script>
-	<!-- End Google Tag Manager -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes">
 	<title>Thank You</title>
@@ -44,13 +34,15 @@ $url = $_SERVER['SERVER_NAME'];
 	<!--<div class="form-loading" id="loading">loading</div>-->
 	<div id="thankyoucontents">
 		<div class="ty-header">
-			<img src="<?php echo $clientPath . '/assets/images/aegis-main-logo.svg'; ?>" alt="logo" class="ty-header__logo">
+			<img src="<?php echo $clientPath . '/assets/images/aegis-main-logo.svg'; ?>" alt="logo"
+				class="ty-header__logo">
 		</div>
 		<div class="ty-body">
 			<img src="<?php echo $clientPath . '/assets/images/aegis-containers-img1.webp'; ?>" alt=""
 				class="ty-body__bg-image">
 			<div class="ty-content">
-				<img src="<?php echo $clientPath . '/assets/images/ty-success-icon.svg'; ?>" alt="" class="ty-content__icon">
+				<img src="<?php echo $clientPath . '/assets/images/ty-success-icon.svg'; ?>" alt=""
+					class="ty-content__icon">
 				<h2 class="ty-content__heading">Thank You</h2>
 				<p class="ty-content__description">Your request for the Quote has been successfully submitted. Our Team will
 					get back to you shortly</p>

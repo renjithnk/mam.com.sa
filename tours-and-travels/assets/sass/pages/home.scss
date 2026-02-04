@@ -731,11 +731,12 @@
     }
 
     &__call-icon {
-        background: #0797ce;
+
         width: 2rem;
         height: 2rem;
         padding: 0.5rem;
         border-radius: 50%;
+        background: $brand-color1;
     }
 
     &__call-number-wrapper {

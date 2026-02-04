@@ -171,7 +171,7 @@ p > span {
 }
 
 .btn1 {
-  background: #0f1670;
+  background: #16325c;
   color: white;
   position: relative;
   column-gap: 0.35rem;
@@ -194,7 +194,7 @@ p > span {
   background-size: 0.5rem;
 }
 .btn1:hover {
-  background: #0797ce;
+  background: #16325c;
 }
 @media only screen and (min-width: 768px) {
   .btn1 {
@@ -212,7 +212,7 @@ p > span {
 }
 
 .btn2 {
-  background: #0797ce;
+  background: #16325c;
   color: white;
   position: relative;
   column-gap: 0.35rem;
@@ -234,7 +234,7 @@ p > span {
   background-size: 0.5rem;
 }
 .btn2:hover {
-  background: #0f1670;
+  background: #16325c;
 }
 @media only screen and (min-width: 768px) {
   .btn2 {
@@ -291,14 +291,14 @@ p > span {
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 0.9rem;
-  background: #0f1670;
+  background: #16325c;
   color: white;
   align-items: center;
   display: flex;
   column-gap: 0.35rem;
 }
 .btn1-small:hover {
-  background: #0797ce;
+  background: #16325c;
 }
 .btn1-small:after {
   content: " ";
@@ -314,7 +314,7 @@ p > span {
     font-size: 1rem;
   }
   .btn1-text:hover, .btn1-square:hover {
-    color: #0797ce;
+    color: #16325c;
   }
   .btn1-text::after, .btn1-square::after {
     width: 0.65rem;
@@ -576,7 +576,7 @@ aside article:last-of-type {
 }
 .aegis-site-footer__row3 .aegis-site-footer-navbox {
   padding: 3rem;
-  background: #0f1670;
+  background: #16325c;
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 992px) {
@@ -700,7 +700,7 @@ aside article:last-of-type {
 .aegis-site-footer .copyright {
   background: white;
   line-height: 1.25;
-  font-size: 0.8rem;
+  font-size: 16px;
 }
 
 /* Form Global Styles: Starts */
@@ -983,7 +983,7 @@ input[type=submit] {
   background-color: white;
 }
 .landing-page-form .form__submit.btn1:hover {
-  background: #0f1670;
+  background: #16325c;
 }
 
 @-webkit-keyframes pulse {
@@ -1050,7 +1050,7 @@ input[type=date]:valid::before {
 }
 
 .aegis-site-header {
-  border-top: 0.7rem solid #0f1670;
+  border-top: 0.7rem solid #16325c;
 }
 .aegis-site-header__container {
   padding-left: 1rem;
@@ -1129,7 +1129,7 @@ input[type=date]:valid::before {
   font-weight: 600;
   font-size: 0.75rem;
   letter-spacing: -0.001rem;
-  color: #005db5;
+  color: #16325c;
   white-space: nowrap;
   text-align: left;
 }
@@ -1164,7 +1164,7 @@ input[type=date]:valid::before {
   margin: -1px;
 }
 .social-media__link:hover {
-  background: #0797ce;
+  background: #16325c;
 }
 .social-media__link:hover .social-media__link-img-white {
   display: block;
@@ -1248,7 +1248,7 @@ input[type=date]:valid::before {
 }
 .aegis-header-static-box__col2,
 .aegis-header-static-box2__col2 {
-  background: #0797ce;
+  background: #16325c;
   color: white;
   padding-left: 2rem;
   height: 10rem;
@@ -1372,7 +1372,7 @@ input[type=date]:valid::before {
 .subpage-banner__heading:after {
   content: " ";
   height: 0.25rem;
-  background: #0797ce;
+  background: #16325c;
   width: 100%;
   display: flex;
   margin-top: 1rem;
@@ -1458,7 +1458,7 @@ input[type=date]:valid::before {
 }
 
 .request-a-quote-btn__link {
-  background: #0797ce;
+  background: #16325c;
   color: white;
   display: flex;
   align-items: center;
@@ -1469,7 +1469,7 @@ input[type=date]:valid::before {
   padding-right: 0.5rem;
 }
 .request-a-quote-btn__link:hover {
-  background: #0f1670;
+  background: #16325c;
   color: white;
 }
 .request-a-quote-btn__link::after {
@@ -1535,7 +1535,7 @@ input[type=date]:valid::before {
   padding-top: 0.6rem;
 }
 .floating-buttons__links.telecall {
-  background: #0797ce;
+  background: #16325c;
   padding-bottom: 0.6rem;
   padding-top: 0.6rem;
 }
@@ -1551,7 +1551,7 @@ input[type=date]:valid::before {
   width: 1.75rem;
 }
 .floating-buttons__links.gmblocation {
-  background: #0f1670;
+  background: #16325c;
   padding-bottom: 0.6rem;
   padding-top: 0.6rem;
 }
@@ -1746,7 +1746,7 @@ input[type=date]:valid::before {
     font-weight: 500;
   }
   .main-nav__content .main-nav__link:hover {
-    color: #0797ce;
+    color: #16325c;
   }
   .main-nav__submenu-content {
     background: #f5f5f5;
@@ -1766,7 +1766,7 @@ input[type=date]:valid::before {
     background: none;
   }
   .main-nav__submenu-content .main-nav__link:hover {
-    color: #0797ce;
+    color: #16325c;
   }
   .main-nav__submenu-content .main-nav__item {
     display: flex;
@@ -2014,7 +2014,7 @@ input[type=date]:valid::before {
   font-size: 1rem;
 }
 .sidebar-services-listbox__link:hover {
-  color: #0797ce;
+  color: #16325c;
 }
 @media only screen and (min-width: 1200px) {
   .sidebar-services-listbox {
@@ -2495,7 +2495,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  background: #16325c;
 }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
@@ -2857,7 +2857,7 @@ button.swiper-pagination-bullet {
 .swiper1__heading::after {
   content: " ";
   height: 0.25rem;
-  background: #0797ce;
+  background: #16325c;
   width: 100%;
   display: flex;
   margin-top: 1rem;
@@ -2898,7 +2898,7 @@ button.swiper-pagination-bullet {
   }
 }
 .swiper1 .swiper-pagination1 .swiper-pagination-bullet-active {
-  background: #0797ce;
+  background: #16325c;
 }
 
 .mySwiper .swiper-slide {
@@ -3085,7 +3085,7 @@ button.swiper-pagination-bullet {
   }
 }
 .aegis-quick__box-col1 {
-  background: #0f1670;
+  background: #16325c;
   padding: 2rem;
   color: white;
   display: flex;
@@ -3364,7 +3364,7 @@ button.swiper-pagination-bullet {
   }
 }
 .aegis-trucks__box-col2 {
-  background: #0797ce;
+  background: #16325c;
   padding: 2rem;
 }
 @media only screen and (min-width: 1200px) {
@@ -3472,7 +3472,7 @@ button.swiper-pagination-bullet {
   }
 }
 .aegis-pack__box-col1 {
-  background: #0f1670;
+  background: #16325c;
   padding: 2rem;
   color: white;
   display: flex;
@@ -3665,7 +3665,7 @@ button.swiper-pagination-bullet {
   margin-top: 1rem;
 }
 .aegis-containers__box-col1 {
-  background: #0797ce;
+  background: #16325c;
   padding: 1.5rem 2rem;
   text-align: center;
 }
@@ -3794,7 +3794,7 @@ button.swiper-pagination-bullet {
 }
 .aegis-question__telnumber {
   display: inline-flex;
-  background: #0797ce;
+  background: #16325c;
   padding: 1rem 1.5rem;
   color: white;
   justify-content: center;
@@ -3882,7 +3882,7 @@ button.swiper-pagination-bullet {
   }
 }
 .aegis-member__col2 {
-  background: #0797ce;
+  background: #16325c;
   padding: 2rem;
 }
 @media only screen and (min-width: 768px) {
@@ -4345,7 +4345,7 @@ body.lb-disable-scrolling {
   }
 }
 .landing-page .landing-page-form {
-  background-color: #0797ce;
+  background-color: #16325c;
 }
 .landing-page .landing-page-form__heading {
   color: white;
@@ -4361,7 +4361,7 @@ body.lb-disable-scrolling {
   }
 }
 .landing-page .landing-page-form__form-tag {
-  background-color: #0797ce;
+  background-color: #16325c;
   padding-top: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -4542,7 +4542,7 @@ body.lb-disable-scrolling {
   }
 }
 .stress-free-move__items {
-  background-color: #0797ce;
+  background-color: #16325c;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -4567,7 +4567,7 @@ body.lb-disable-scrolling {
 }
 .stress-free-move__items-container::before {
   content: " ";
-  background-color: #0797ce;
+  background-color: #16325c;
   width: 0.2rem;
   height: 100%;
   position: absolute;
@@ -4620,7 +4620,7 @@ body.lb-disable-scrolling {
 }
 .get-free-quote-button__link {
   height: auto;
-  background: #0f1670;
+  background: #16325c;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -5170,7 +5170,7 @@ body.lb-disable-scrolling {
 }
 
 .ty-header {
-  border-top: 1rem solid #0f1670;
+  border-top: 1rem solid #16325c;
 }
 .ty-header__logo {
   width: 13rem;
@@ -5220,7 +5220,7 @@ body.lb-disable-scrolling {
   }
 }
 .ty-content__heading {
-  color: #0797ce;
+  color: #16325c;
   font-size: 2rem;
 }
 .ty-content__description {
@@ -5234,7 +5234,7 @@ body.lb-disable-scrolling {
   }
 }
 .ty-content__btn {
-  background: #0f1670;
+  background: #16325c;
   height: 3rem;
   display: flex;
   align-items: center;
@@ -5406,7 +5406,7 @@ body.lb-disable-scrolling {
   font-size: 1rem;
   border: none;
   outline: none;
-  background-color: #0797ce;
+  background-color: #16325c;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -5441,7 +5441,7 @@ body.lb-disable-scrolling {
 }
 
 .move-to-top:hover {
-  background-color: #0797ce;
+  background-color: #16325c;
 }
 
 .move-to-top.move-to-top--active {
@@ -5581,7 +5581,7 @@ body.lb-disable-scrolling {
 }
 
 .moving-to-uk-tel-no {
-  background: #0f1670;
+  background: #16325c;
   color: white;
   padding: 5px 15px;
   display: flex;

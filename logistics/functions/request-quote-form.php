@@ -107,10 +107,11 @@ if ($isValid) {
 
 		// Always send to both
 		$mail->addAddress("sales@mam.com.sa");
+		$mail->addAddress("rates@mam.com.sa");
 		$mail->addAddress("renjithnks@gmail.com");
 
 		$mail->isHTML(true);
-		$mail->Subject = "Request a Quote from $url";
+		$mail->Subject = "Request a Quote Enquiry";
 		$mail->Body = '
 <h3>Quote Request Details</h3>
 <table cellpadding="2" cellspacing="0" width="70%" style="border-collapse:collapse; border:1px solid #ddd;">

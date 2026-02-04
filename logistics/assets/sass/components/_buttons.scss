@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .btn1 {
-    background: $brand-color1; 
+    background: $brand-color1;
     color: white;
     position: relative;
     column-gap: 0.35rem;
@@ -26,7 +26,7 @@
     }
 
     &:hover {
-        background: $brand-color2;
+        background: $brand-color1;
     }
 
     @include md-min {
@@ -135,14 +135,14 @@
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 0.9rem;
-    background: #0f1670;
+    background: $brand-color1;
     color: white;
     align-items: center;
     display: flex;
     column-gap: 0.35rem;
 
     &:hover {
-        background: $brand-color2;
+        background: $brand-color1;
     }
 
     &:after {

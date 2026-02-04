@@ -92,10 +92,11 @@ if ($isValid) {
 
         // ALWAYS send to both addresses
         $mail->addAddress("sales@mam.com.sa");
+        $mail->addAddress("rates@mam.com.sa");
         $mail->addAddress("renjithnks@gmail.com");
 
         $mail->isHTML(true);
-        $mail->Subject = "New Enquiry from $url";
+        $mail->Subject = "Enquiry from Contact Page";
         $mail->Body = '
 <h3>Enquiry Details</h3>
 <table cellpadding="2" cellspacing="0" width="70%"

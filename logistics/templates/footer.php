@@ -159,7 +159,7 @@
                 </ul>
             </div>
             <div class="copyright">Copyright @ <span id="copyright_year"></span>
-                <?php echo $aegisSettingsResultRow['copyright']; ?></div>
+                All Rights Reserved by MAM Logistics</div>
         </div>
     </div>
 
@@ -172,6 +172,14 @@
 
 <!-- Initialize Flatpickr -->
 <script>
+    let datefield = document.querySelector('.date-field');
+    if (datefield) {
+        document.querySelectorAll(".date-field .date-icon")[0]
+            .addEventListener("click", () => estimatedPicker.open());
+
+        document.querySelectorAll(".date-field .date-icon")[1]
+            .addEventListener("click", () => deliveryPicker.open());
+    }
     const estimatedPicker = flatpickr("#estimated_date", {
         dateFormat: "d/m/Y",
         allowInput: true
@@ -181,16 +189,34 @@
         dateFormat: "d/m/Y",
         allowInput: true
     });
-    let datefield = document.querySelector('.date-field')[0];
-    if (datefield) {
-        document.querySelectorAll(".date-field .date-icon")[0]
-            .addEventListener("click", () => estimatedPicker.open());
 
-        document.querySelectorAll(".date-field .date-icon")[1]
-            .addEventListener("click", () => deliveryPicker.open());
-    }
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/69809a4cfd3ee61c36a87659/1jgf5lf96';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<script>
+    Tawk_API = Tawk_API || {};
+    Tawk_API.customStyle = {
+        chatBubble: {
+            display: 'block'
+        },
+        suggestion: {
+            display: 'none'
+        }
+    };
 </script>
 
+
+<!--End of Tawk.to Script-->
 
 </body>
 

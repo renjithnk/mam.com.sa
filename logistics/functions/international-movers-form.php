@@ -101,15 +101,16 @@ if ($isValid) {
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 		$mail->Port = 587;
 
-		$mail->setFrom("sales@mam.com.sa", "International Movers Enquiry");
+		$mail->setFrom("sales@mam.com.sa", "MAM Website Enquiry");
 		$mail->addReplyTo($email, $name);
 
 		// ALWAYS send to both addresses
 		$mail->addAddress("sales@mam.com.sa");
+		$mail->addAddress("rates@mam.com.sa");
 		$mail->addAddress("renjithnks@gmail.com");
 
 		$mail->isHTML(true);
-		$mail->Subject = "International Movers Enquiry from $url";
+		$mail->Subject = "International Movers Enquiry";
 		$mail->Body = '
 <h3>International Movers Details</h3>
 <table cellpadding="2" cellspacing="0" width="70%" style="border-collapse:collapse; border:1px solid #ddd;">

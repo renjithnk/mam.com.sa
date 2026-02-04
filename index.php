@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to mam.com.sa</title>
+    <title>Welcome to MAM Group</title>
     <link href="main-index/assets/css/styles.css" type="text/css" rel="stylesheet">
     <!-- Google Tag Manager -->
     <!-- <script async>

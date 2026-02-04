@@ -107,10 +107,11 @@ if ($isValid) {
 
 		// Always send to both
 		$mail->addAddress("sales@mam.com.sa");
+		$mail->addAddress("rates@mam.com.sa");
 		$mail->addAddress("renjithnks@gmail.com");
 
 		$mail->isHTML(true);
-		$mail->Subject = "Moving To UK Request from $url";
+		$mail->Subject = "Moving To UK Enquiry";
 		$mail->Body = '
 <html>
 <head><title>Moving To UK Request</title></head>

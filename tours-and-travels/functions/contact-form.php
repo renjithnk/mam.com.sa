@@ -105,11 +105,11 @@ if ($isValid) {
 		$mail->setFrom("sales@mam.com.sa", "MAM Website Enquiry");
 		$mail->addReplyTo($email, $name);
 
-		// $mail->addAddress("operations@mam.com.sa");
+		$mail->addAddress("reservation@mam.com.sa");
 		$mail->addAddress("renjithnks@gmail.com");
 
 		$mail->isHTML(true);
-		$mail->Subject = "Contact Enquiry";
+		$mail->Subject = "Enquiry from Contact Page";
 		$mail->Body = $emailBody;
 
 		$mail->send();

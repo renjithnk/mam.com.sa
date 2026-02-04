@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -97,8 +96,8 @@
                             E-mail Us at
                         </div>
                         <div class="alim-header-static-box__col2-emails-container">
-                            <a href="mailto:reservations@mam.com.sa"
-                                class="alim-header-static-box__col2-emails-links">reservations@mam.com.sa</a>
+                            <a href="mailto:reservation@mam.com.sa"
+                                class="alim-header-static-box__col2-emails-links">reservation@mam.com.sa</a>
                         </div>
                     </div>
                     <div class="alim-header-static-box__col2-telno">
